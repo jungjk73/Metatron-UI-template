@@ -1,0 +1,83 @@
+.ag-fresh-light .ag-body ::-webkit-scrollbar {background-color: #f1f1f1;}
+.ag-fresh-light .ag-body ::-webkit-scrollbar-button {background-color: #f1f1f1;}
+.ag-fresh-light .ag-body ::-webkit-scrollbar-track {background-color: #f1f1f1;}
+.ag-fresh-light .ag-body ::-webkit-scrollbar-thumb {background-color: #c1c1c1;}
+.ag-fresh-light .ag-body ::-webkit-scrollbar-corner {background-color: #f1f1f1}
+.ag-fresh-light .ag-body ::-webkit-resizer {}
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment
+{
+  background-color: #f1f1f1;
+}
+
+.ag-fresh-light {
+  line-height: 1.4;
+}
+.ag-fresh-light img {
+  vertical-align: middle;
+}/*
+.ag-fresh-light .ag-root {
+  border-bottom: 1px solid #ddd;
+}*/
+.ag-fresh-light .ag-header {
+  background-color:#f5f5f5;
+  border-top: 1px solid #ddd;
+  height : 34px;
+  border-bottom: 1px solid #ddd;
+  color: #333 !important;
+  font-weight: bold;
+  vertical-align: middle;
+  /*text-align: center;*/
+  text-align: justify;
+}
+/**
+text-overflow: clip;
+overflow: visible;
+white-space: normal;
+**/
+.ag-fresh-light .ag-header-cell-label {
+    padding: 4px 4px 10px;
+}
+.ag-fresh-light .ag-header-cell-text {
+    /*padding-left: 2px;*/
+}
+.ag-fresh-light .ag-header-cell {
+	vertical-aligh : middle;
+}
+.ag-fresh-light .ag-body {
+  /*background-color: #1A1B1B;*/
+  /*padding-top : 31px; !important;*/
+}
+.ag-fresh-light .ag-row-selected {
+  background-color: #f4f8ff !important;
+  color:  #000;
+  font-weight:bold;
+}
+.ag-fresh-light .ag-body .ag-row-odd:hover {
+  background-color: #f4f8ff !important;
+  color:  #000 !important;
+  font-weight:bold !important;
+}
+.ag-fresh-light .ag-body .ag-row-even:hover {
+  background-color: #f4f8ff !important;
+  color:  #000 !important;
+  font-weight:bold !important;
+}
+.ag-fresh-light .ag-body .ag-row-even {
+  border-bottom:1px solid #ddd;
+  font-size : 12px;
+}
+.ag-fresh-light .ag-body .ag-row-odd {
+  border-bottom:1px solid #ddd;
+  font-size : 12px;
+}
+.ag-fresh-light .ag-cell {
+  padding: 10px;
+}
+.ag-fresh-light .ag-cell-pre-line {   /* henry20231121 추가. */
+  padding: 10px;
+  white-space: pre-line;
+  overflow-y: auto;
+}
+.ag-root{border-left:1px solid #ddd; border-right: 1px solid #ddd;}
+.theme-DARK .ag-root{border:none;}

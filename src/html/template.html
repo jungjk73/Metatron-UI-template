@@ -1,0 +1,493 @@
+<html lang="ko" class="theme-LIGHT">
+  <head>
+    <style type="text/css">
+      @charset "UTF-8";
+      [ng\:cloak],
+      [ng-cloak],
+      [data-ng-cloak],
+      [x-ng-cloak],
+      .ng-cloak,
+      .x-ng-cloak,
+      .ng-hide:not(.ng-hide-animate) {
+        display: none !important;
+      }
+      ng\:form {
+        display: block;
+      }
+      .ng-animate-shim {
+        visibility: hidden;
+      }
+      .ng-anchor {
+        position: absolute;
+      }
+    </style>
+    <title></title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../resources/metatron/css/reset.css" />
+    <link rel="stylesheet" href="../resources/metatron/css/jquery/jquery.powertip.min.css" />
+    <link rel="stylesheet" href="../resources/metatron/css/angularjs/tree-control.css" />
+    <link rel="stylesheet" href="../resources/metatron/css/angularjs/tree-control-attribute.css" />
+    <link rel="stylesheet" href="../resources/metatron/css/angularjs/ngDialog.css" />
+    <link rel="stylesheet" href="../resources/metatron/css/angularjs/ngDialog-theme-default.css" />
+
+    <link rel="stylesheet" href="../resources/metatron/css/angularjs/theme-fresh.css" id="css_theme_fresh" />
+    <link rel="stylesheet" href="../resources/metatron/css/angularjs/theme-fresh-light.css" id="css_theme_fresh_light" />
+
+    <link rel="stylesheet" href="../resources/metatron/css/common_integrated.css" />
+    <link rel="stylesheet" href="../resources/metatron/css/layout_integrated.css" />
+    <link rel="stylesheet" href="../resources/metatron/css/style_integrated.css" />
+
+    <link rel="stylesheet" href="../resources/metatron/css/metatron.css" />
+    <link rel="stylesheet" href="../resources/metatron/css/dev.css" />
+    <link rel="stylesheet" href="../resources/metatron/css/angular.css" />
+    <!-- 2024-04-10 jjk 추가  -->
+    <link rel="stylesheet" href="../resources/css/pop-menu.css" />
+
+    <!-- JS -->
+    <!-- <script type="text/javascript" src="../resources/metatron/js/lib/jquery/spin.min.js"></script>
+    <style type="text/css"></style>
+    <script type="text/javascript" src="../resources/metatron/js/lib/echart/echarts.common.min.js"></script>
+    <script type="text/javascript" src="../resources/metatron/js/framework/common/log.js"></script>
+    <script type="text/javascript" src="../resources/metatron/js/framework/common/common.js"></script>
+    <script type="text/javascript" src="../resources/metatron/js/metatron/view/left-common.js"></script> -->
+
+    <link themer-link="" />
+    <!-- <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="../resources/metatron/js/metatron/main.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="../resources/metatron/js/lib/underscore/underscore-1.8.3.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="moment" src="../resources/metatron/js/lib/moment/moment-2.11.2.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mark" src="../resources/metatron/js/lib/jquery/jquery.mark.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="../resources/metatron/js/lib/jquery/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery-ui" src="../resources/metatron/js/lib/jquery/jquery-ui-1.11.4.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular" src="../resources/metatron/js/lib/angular/angular.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery-blockUI" src="../resources/metatron/js/lib/jquery/jquery.blockUI.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery-slimscroll" src="../resources/metatron/js/lib/jquery/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery-dateFormat" src="../resources/metatron/js/lib/jquery/jquery-dateFormat.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="globalize" src="../resources/metatron/js/framework/common/globalize.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-route" src="../resources/metatron/js/lib/angular/angular-route.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-translate" src="../resources/metatron/js/lib/angular/angular-translate.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-cookies" src="../resources/metatron/js/lib/angular/angular-cookies.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-translate-loader-static-files" src="../resources/metatron/js/lib/angular/angular-translate-loader-static-files.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="app" src="../resources/metatron/js/metatron/app.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="http-interceptor-factory" src="../resources/metatron/js/framework/factory/http-interceptor-factory.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="exception-factory" src="../resources/metatron/js/framework/factory/exception-factory.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dependency-resolver-factory" src="../resources/metatron/js/framework/factory/dependency-resolver-factory.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common-util-factory" src="../resources/metatron/js/metatron/common/factory/common-util-factory.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="grid-renderer-factory" src="../resources/metatron/js/metatron/common/factory/grid-renderer-factory.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="config-manager-provider" src="../resources/metatron/js/framework/provider/config-manager-provider.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="window-reload-detect-provider" src="../resources/metatron/js/framework/provider/window-reload-detect-provider.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="html-filter" src="../resources/metatron/js/framework/filter/html-filter.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="route-config" src="../resources/metatron/js/metatron/route.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/controller/header-controller" src="../resources/metatron/js/metatron/common/controller/header-controller.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/controller/left-controller" src="../resources/metatron/js/metatron/common/controller/left-controller.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/directive/tooltip-menu-directive" src="../resources/metatron/js/metatron/common/directive/tooltip-menu-directive.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/directive/scroll-directive" src="../resources/metatron/js/metatron/common/directive/scroll-directive.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/service/alarm-service" src="../resources/metatron/js/metatron/common/service/alarm-service.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/service/alarm-manager" src="../resources/metatron/js/metatron/common/service/alarm-manager.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/service/data-service" src="../resources/metatron/js/metatron/common/service/data-service.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/service/websocket-service" src="../resources/metatron/js/metatron/common/service/websocket-service.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ag-grid" src="../resources/metatron/js/lib/angular/ag-grid.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ng-dialog" src="../resources/metatron/js/lib/angular/ng-dialog-1.2.0.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-echart" src="../resources/metatron/js/lib/echart/angular-echart.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-disabled" src="../resources/metatron/js/lib/angular/angular-disable-all.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-slimscroll" src="../resources/metatron/js/lib/angular/angular-slimscroll.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-tree-control" src="../resources/metatron/js/lib/angular/angular-tree-control-0.2.28.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="zingchart" src="../resources/metatron/js/lib/zingchart/zingchart.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-ui-router" src="../resources/metatron/js/lib/angular/angular-ui-router.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-grid" src="../resources/metatron/js/lib/angular/angular-grid.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-zingchart" src="../resources/metatron/js/lib/angular/angular-zingchart.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/dashboard/overview/overview-dashboard-controller" src="../resources/metatron/js/metatron/dashboard/overview/overview-dashboard-controller.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/controller/popup/rawdata-grid-popup-controller" src="../resources/metatron/js/metatron/common/controller/popup/rawdata-grid-popup-controller.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lib/jquery/jquery.powertip.min" src="../resources/metatron/js/lib/jquery/jquery.powertip.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/directive/component-event-directive" src="../resources/metatron/js/metatron/common/directive/component-event-directive.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/directive/agGridPaging-directive" src="../resources/metatron/js/metatron/common/directive/agGridPaging-directive.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/directive/select-box-directive" src="../resources/metatron/js/metatron/common/directive/select-box-directive.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/activities/system/system-status-controller" src="../resources/metatron/js/metatron/activities/system/system-status-controller.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/directive/search-condition-directive" src="../resources/metatron/js/metatron/common/directive/search-condition-directive.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/directive/date-time-selector-directive" src="../resources/metatron/js/metatron/common/directive/date-time-selector-directive.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/activities/system/history-controller" src="../resources/metatron/js/metatron/activities/system/history-controller.js"></script>
+    -->
+  </head>
+  <body style="color: rgb(0, 0, 0)" cz-shortcut-listen="true">
+    <header ng-controller="LeftCtrl as leftCtrl" id="leftM" style="width: 200px; height: 958.889px; border: 3px soild red">
+      <h1>
+        <span ng-click="leftCtrl.goToDefaultPath()" style="cursor: pointer">METATRON<em>MANAGER</em></span>
+        <button type="button" style="border: 0; outline: 0">MENU</button>
+      </h1>
+      <nav class="mu-gnb">
+        <!-- Depth1 -->
+        <ul class="mu-slide-menu" style="z-index: 990">
+          <li class="cluster">
+            <a style="pointer-events: none; cursor: default; background-color: #11a8ab"><i class="mu-icon mn-01"></i>Cluster</a>
+            <button type="button" class="mu-btn mu-btn-icon" ng-show="leftCtrl.masterFlag">
+              <i class="mu-icon refresh" id="refreshButton" ng-click="leftCtrl.refreshClusterList()"></i>
+            </button>
+            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: auto">
+              <ul id="cluster_inner" style="background-color: rgb(43, 51, 80); overflow: hidden; width: auto; height: 90px" slimscroll="{height:'90px', color:'#6e6e6e', size:'7px'}">
+                <!----><!---->
+                <!----><!---->
+                <li ng-click="leftCtrl.selectGroupId($event,obj.systemSeq, obj.systemParentSeq, obj.systemName)" ng-repeat="obj in leftCtrl.systemGroupList" ng-if="leftCtrl.systemGroupList != null &amp;&amp; leftCtrl.systemGroupList.length > 0">
+                  <a style="padding: 13px 0px 13px 20px; color: rgb(68, 206, 209)" href="" id="cluster_1">THADOOP</a>
+                  <div ng-show="$last" style="height: 20px"></div>
+                </li>
+                <!----><!---->
+              </ul>
+              <div class="slimScrollBar" style="background: rgb(110, 110, 110); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 91.0112px"></div>
+              <div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px"></div>
+            </div>
+          </li>
+          <!---->
+          <li id="li_m_1001" ng-repeat="m in leftCtrl.menu track by (m.menuId + m.menuName)" class="top-mn">
+            <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(m , $event)"><i class="mu-icon mn-02"></i>Dashboard</a>
+            <button ng-show="m.childrenFlag != null &amp;&amp; m.childrenFlag == 'Y'" type="button" class="mu-btn mu-btn-icon"><i class="mu-icon arr-down"></i></button>
+            <ul id="m_1001" class="sub-mn" style="z-index: 990; display: none">
+              <!----><!----><!----><!----><!----><!----><!----><!----><!---->
+
+              <!----><!---->
+              <li ng-if="child.childrenFlag == null || child.childrenFlag == 'N'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <!---->
+                <!----><a href="javascript:void(0);" ng-if="child.menuName.length < 21" ng-click="leftCtrl.selectMenu(child , $event)" id="m_2000" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Overview</a
+                ><!---->
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag == null || child.childrenFlag == 'N'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <!---->
+                <!----><a href="javascript:void(0);" ng-if="child.menuName.length < 21" ng-click="leftCtrl.selectMenu(child , $event)" id="m_2001" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Job</a
+                ><!---->
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag == null || child.childrenFlag == 'N'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <!---->
+                <!----><a href="javascript:void(0);" ng-if="child.menuName.length < 21" ng-click="leftCtrl.selectMenu(child , $event)" id="m_2003" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Metric</a
+                ><!---->
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag == null || child.childrenFlag == 'N'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <!---->
+                <!----><a href="javascript:void(0);" ng-if="child.menuName.length < 21" ng-click="leftCtrl.selectMenu(child , $event)" id="m_2004" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">HeatMap</a
+                ><!---->
+              </li>
+              <!----><!---->
+            </ul>
+          </li>
+          <!---->
+          <li id="li_m_1002" ng-repeat="m in leftCtrl.menu track by (m.menuId + m.menuName)" class="top-mn">
+            <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(m , $event)"><i class="mu-icon mn-03"></i>Services</a>
+            <button ng-show="m.childrenFlag != null &amp;&amp; m.childrenFlag == 'Y'" type="button" class="mu-btn mu-btn-icon"><i class="mu-icon arr-down"></i></button>
+            <ul id="m_1002" class="sub-mn" style="z-index: 990; display: none">
+              <!----><!---->
+              <li ng-if="child.childrenFlag != null &amp;&amp; child.childrenFlag == 'Y'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <a href="javascript:void(0);" id="m_2005" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">HDFS<i class="mu-icon fillarrow-r"></i></a>
+                <ul class="depth3" style="display: none">
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3001">Status</a>
+                  </li>
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3023">File Browser</a>
+                  </li>
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3036">RPC Monitoring</a>
+                  </li>
+                  <!---->
+                </ul>
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag != null &amp;&amp; child.childrenFlag == 'Y'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <a href="javascript:void(0);" id="m_2017" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Yarn<i class="mu-icon fillarrow-r"></i></a>
+                <ul class="depth3" style="display: none">
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3015">Status</a>
+                  </li>
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3016">Queue</a>
+                  </li>
+                  <!---->
+                </ul>
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag != null &amp;&amp; child.childrenFlag == 'Y'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <a href="javascript:void(0);" id="m_2022" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Trino<i class="mu-icon fillarrow-r"></i></a>
+                <ul class="depth3" style="display: none">
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3018">Status</a>
+                  </li>
+                  <!---->
+                </ul>
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag != null &amp;&amp; child.childrenFlag == 'Y'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <a href="javascript:void(0);" id="m_2031" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Analysis<i class="mu-icon fillarrow-r"></i></a>
+                <ul class="depth3" style="display: none">
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3017">History</a>
+                  </li>
+                  <!---->
+                </ul>
+              </li>
+              <!----><!---->
+
+              <!----><!----><!----><!----><!----><!----><!----><!----><!---->
+            </ul>
+          </li>
+          <!---->
+          <li id="li_m_1003" ng-repeat="m in leftCtrl.menu track by (m.menuId + m.menuName)" class="top-mn">
+            <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(m , $event)"><i class="mu-icon mn-04"></i>Activities</a>
+            <button ng-show="m.childrenFlag != null &amp;&amp; m.childrenFlag == 'Y'" type="button" class="mu-btn mu-btn-icon"><i class="mu-icon arr-down"></i></button>
+            <ul id="m_1003" class="sub-mn" style="z-index: 990; display: none">
+              <!----><!---->
+              <li ng-if="child.childrenFlag != null &amp;&amp; child.childrenFlag == 'Y'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <a href="javascript:void(0);" id="m_2008" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Job<i class="mu-icon fillarrow-r"></i></a>
+                <ul class="depth3" style="display: none">
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3008">History</a>
+                  </li>
+                  <!---->
+                </ul>
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag != null &amp;&amp; child.childrenFlag == 'Y'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <a href="javascript:void(0);" id="m_2010" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">System<i class="mu-icon fillarrow-r"></i></a>
+                <ul class="depth3" style="display: none">
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3011">Status</a>
+                  </li>
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3012">History</a>
+                  </li>
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3034">Memory History</a>
+                  </li>
+                  <!---->
+                </ul>
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag != null &amp;&amp; child.childrenFlag == 'Y'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <a href="javascript:void(0);" id="m_2034" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Alarm<i class="mu-icon fillarrow-r"></i></a>
+                <ul class="depth3" style="display: none">
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3013">Status</a>
+                  </li>
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3014">History</a>
+                  </li>
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3020">Configuration</a>
+                  </li>
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3030">SMS Configuration</a>
+                  </li>
+                  <!---->
+                </ul>
+              </li>
+              <!----><!---->
+
+              <!----><!----><!----><!----><!----><!----><!---->
+            </ul>
+          </li>
+          <!---->
+          <li id="li_m_1005" ng-repeat="m in leftCtrl.menu track by (m.menuId + m.menuName)" class="top-mn">
+            <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(m , $event)"><i class="mu-icon mn-06"></i>Data</a>
+            <button ng-show="m.childrenFlag != null &amp;&amp; m.childrenFlag == 'Y'" type="button" class="mu-btn mu-btn-icon"><i class="mu-icon arr-down"></i></button>
+            <ul id="m_1005" class="sub-mn" style="z-index: 990; display: none">
+              <!----><!---->
+              <li ng-if="child.childrenFlag != null &amp;&amp; child.childrenFlag == 'Y'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <a href="javascript:void(0);" id="m_2032" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Job<i class="mu-icon fillarrow-r"></i></a>
+                <ul class="depth3" style="display: none">
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3025">JobCount</a>
+                  </li>
+                  <!---->
+                </ul>
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag != null &amp;&amp; child.childrenFlag == 'Y'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <a href="javascript:void(0);" id="m_2033" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">HDFS<i class="mu-icon fillarrow-r"></i></a>
+                <ul class="depth3" style="display: none">
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3028">Service Summary</a>
+                  </li>
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3032">Overview</a>
+                  </li>
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3033">Daily Summary</a>
+                  </li>
+                  <!---->
+                </ul>
+              </li>
+              <!----><!---->
+
+              <!----><!----><!----><!----><!---->
+            </ul>
+          </li>
+          <!---->
+          <li id="li_m_1007" ng-repeat="m in leftCtrl.menu track by (m.menuId + m.menuName)" class="top-mn">
+            <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(m , $event)"><i class="mu-icon mn-08"></i>Administrator</a>
+            <button ng-show="m.childrenFlag != null &amp;&amp; m.childrenFlag == 'Y'" type="button" class="mu-btn mu-btn-icon"><i class="mu-icon arr-down"></i></button>
+            <ul id="m_1007" class="sub-mn" style="z-index: 990; display: none">
+              <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+
+              <!----><!---->
+              <li ng-if="child.childrenFlag == null || child.childrenFlag == 'N'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <!---->
+                <!----><a href="javascript:void(0);" ng-if="child.menuName.length < 21" ng-click="leftCtrl.selectMenu(child , $event)" id="m_2014" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">User Management</a
+                ><!---->
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag == null || child.childrenFlag == 'N'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <!---->
+                <!----><a href="javascript:void(0);" ng-if="child.menuName.length < 21" ng-click="leftCtrl.selectMenu(child , $event)" id="m_2015" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Host Management</a
+                ><!---->
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag == null || child.childrenFlag == 'N'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <!---->
+                <!----><a href="javascript:void(0);" ng-if="child.menuName.length < 21" ng-click="leftCtrl.selectMenu(child , $event)" id="m_2025" style="color: rgb(68, 206, 209); background-color: rgb(55, 64, 93)" select="true">Configuration</a
+                ><!---->
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag == null || child.childrenFlag == 'N'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <!---->
+                <!----><a href="javascript:void(0);" ng-if="child.menuName.length < 21" ng-click="leftCtrl.selectMenu(child , $event)" id="m_2026" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Service Management</a
+                ><!---->
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag == null || child.childrenFlag == 'N'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <!----><a href="javascript:void(0);" ng-if="child.menuName.length > 21" style="font-size: 13px; color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)" ng-click="leftCtrl.selectMenu(child , $event)" id="m_2028">Application Management</a
+                ><!---->
+                <!---->
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag == null || child.childrenFlag == 'N'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <!---->
+                <!----><a href="javascript:void(0);" ng-if="child.menuName.length < 21" ng-click="leftCtrl.selectMenu(child , $event)" id="m_2036" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Report</a
+                ><!---->
+              </li>
+              <!----><!---->
+            </ul>
+          </li>
+          <!---->
+          <li id="li_m_1009" ng-repeat="m in leftCtrl.menu track by (m.menuId + m.menuName)" class="top-mn active">
+            <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(m , $event)"><i class="mu-icon mn-010"></i>Infra</a>
+            <button ng-show="m.childrenFlag != null &amp;&amp; m.childrenFlag == 'Y'" type="button" class="mu-btn mu-btn-icon"><i class="mu-icon arr-up"></i></button>
+            <ul id="m_1009" class="sub-mn" style="z-index: 990; display: block">
+              <!----><!----><!---->
+
+              <li ng-if="child.childrenFlag == null || child.childrenFlag == 'N'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <!---->
+                <!----><a href="javascript:void(0);" ng-if="child.menuName.length < 21" ng-click="leftCtrl.selectMenu(child , $event)" id="m_4002" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Hadoop Ecosystem</a
+                ><!---->
+              </li>
+              <!----><!---->
+            </ul>
+          </li>
+          <!---->
+        </ul>
+      </nav>
+    </header>
+    <div class="mu-container" style="height: 100%">
+      <section width="100%">
+        <div class="mu-top-cont" ng-controller="HeaderCtrl as headerCtrl" id="headerM">
+          <ol class="mu-path fl">
+            <!---->
+            <li ng-repeat="header in headerCtrl.headerMenu track by $index"><a> Infra</a></li>
+            <!---->
+            <li ng-repeat="header in headerCtrl.headerMenu track by $index"><a> Hadoop Ecosystem</a></li>
+          </ol>
+          <div class="mu-top-menu fr" style="margin-right: 20px">
+            <div class="user-info">
+              <!-- 2024-04-10 jjk 추가 -->
+              <div id="pop-menu-btn"></div>
+              <span class="push-area" ng-click="headerCtrl.alarmPopClick()" style="cursor: pointer">
+                <i class="push-alarm mu-icon bell"></i>
+                <b class="mu-badge ng-hide" ng-show="headerCtrl.showAlarmCount == true">0</b>
+              </span>
+              <button class="btn-logout mu-btn mu-btn-icon" ng-click="headerCtrl.updateUserPop($event)"><i class="icon-user mu-icon user"></i> admin</button>
+
+              <i class="icon-clock mu-icon clock" style="margin-left: 0px"></i>
+              <b class="date-time" title="Last refreshed date">2024-04-10 11:57</b>
+
+              <button class="btn-logout mu-btn mu-btn-icon" ng-click="headerCtrl.logoutHandler()"><i class="mu-icon logout2"></i> Logout</button>
+
+              <!--
+    
+      <button class="btn-setting mu-btn mu-btn-icon mu-btn-bg-non" ng-click="headerCtrl.updateUserPop($event)" style="margin-left : -15px"><i class="mu-icon setting"></i></button>
+    
+     -->
+            </div>
+          </div>
+        </div>
+        <div>
+          <!-- container -->
+          <div id="container">
+            <!---->
+            <ui-view width="100%" height="100%" layout="vertical" id="bodyContent">
+              <!-- <div class="mu-content" ng-controller="SystemHistoryCtrl as systemHistoryCtrl" infinite-scroll="systemHistoryCtrl.loadMoreRecords();"> -->
+              <style>
+                .not-kor {
+                  ime-mode: disabled;
+                }
+              </style>
+              <light-content>
+                <div class="mu-content">
+                  <div class="mu-row">
+                    <div class="mu-col" ng-class=" { 'mu-col-10': systemHistoryCtrl.viewType == 'HOST'} ">
+                      <div class="section-box">
+                        <div class="cont-area mu-scroll-v" id="chartOuterArea" style="height: 200px">
+                          <a href="#"><span class="pop-menu-link">YARN</span></a>
+                          <a href="#"><span class="pop-menu-link">Trino</span></a>
+                          <a href="#"><span class="pop-menu-link">HDFS(nn)</span></a>
+                          <a href="#"><span class="pop-menu-link">DFS router</span></a>
+                          <a href="#"><span class="pop-menu-link">Airflow</span></a>
+                          <a href="#"><span class="pop-menu-link">Provisioning</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </light-content>
+            </ui-view>
+          </div>
+          <!-- //container -->
+
+          <!-- <script>
+            var require = {
+              urlArgs: "ver=201602221114",
+            };
+          </script>
+          <script type="text/javascript" data-main="../resources/metatron/js/metatron/main" src="../resources/metatron/js/lib/require/require-2.1.22.min.js"></script> -->
+        </div>
+      </section>
+    </div>
+
+    <footer id="footerM">Copyright <i class="mu-icon copyright"></i> 2022 SK Telecom. All rights reserved.</footer>
+    <div id="indicator"></div>
+    <div id="powerTip"></div>
+    <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+    <!--  -->
+    <script type="text/javascript" src="../resources/js/pop-menu.js"></script>
+  </body>
+</html>

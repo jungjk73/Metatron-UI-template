@@ -1,0 +1,156 @@
+treecontrol {
+    /* prevent user selection */
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    /* default */
+    font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+    font-size:13px;
+    color: #555;
+    text-decoration: none;
+}
+
+treecontrol ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    overflow: hidden;
+}
+
+treecontrol li {
+    margin: 0;
+    padding: 3px 0 3px 20px;
+    /*background: url('/resources/images/tree-control/img_treeview_default_line.gif') no-repeat 0 0;*/
+    color: #eee;
+}
+
+/*treecontrol li:last-child {*/
+    /*background-position: 0 -1764px;*/
+/*}*/
+
+
+treecontrol li:last-child {
+    background-position: 0 -14194px;
+    color: #eee;
+}
+
+treecontrol li.tree-expanded i.tree-leaf-head, treecontrol li.tree-collapsed i.tree-leaf-head {display:none;}
+treecontrol li.tree-expanded i.tree-branch-head, treecontrol li.tree-collapsed i.tree-branch-head {display:inline;}
+treecontrol li.tree-leaf i.tree-branch-head {display:none;}
+treecontrol li.tree-leaf i.tree-leaf-head {display:inline;}
+
+treecontrol li i.tree-branch-head {
+    cursor: pointer;
+}
+
+treecontrol li .tree-label {
+    cursor: pointer;
+    display: inline;
+}
+
+treecontrol li .tree-unselectable {
+    cursor: not-allowed;
+}
+
+treecontrol.tree-classic li.tree-expanded i.tree-branch-head {
+    padding: 0 10px;
+    background: url("/resources/images/tree-control/folder.png") no-repeat 0 0;
+}
+
+treecontrol.tree-classic li.tree-collapsed i.tree-branch-head {
+    padding: 0 10px;
+    background: url("/resources/images/tree-control/folder-closed.png") no-repeat 0 0;
+}
+
+treecontrol.tree-classic li.tree-leaf i.tree-leaf-head {
+    padding: 0 10px;
+    background: url("/resources/images/tree-control/file.png") no-repeat 0 0;
+}
+
+treecontrol.tree-classic li .tree-selected {
+    background-color: #aaddff;
+    font-weight: bold;
+}
+
+treecontrol.tree-classic li .tree-unselectable {
+    color: #ddd;
+}
+
+treecontrol.tree-light li.tree-expanded i.tree-branch-head {
+    padding: 1px 10px;
+/*     background: url("/resources/images/tree-control/node-opened-2.png") no-repeat; */
+}
+
+treecontrol.tree-light li.tree-collapsed i.tree-branch-head {
+    padding: 1px 10px;
+/*     background: url("/resources/images/tree-control/node-closed-2.png") no-repeat; */
+}
+
+treecontrol.tree-light li.tree-leaf i.tree-leaf-head {
+    padding: 1px 10px;
+    width: 16px; height: 16px;
+    background: none no-repeat;
+}
+
+/* treecontrol.tree-light li .tree-selected { */
+/*     font-weight: bold; */
+/* } */
+
+treecontrol.tree-light li .tree-unselectable {
+    color: #ddd;
+}
+
+treecontrol.tree-dark li.tree-expanded i.tree-branch-head {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: -20px;
+    cursor: pointer;
+    background: url("/resources/images/tree-control/img_treeview_default.gif")  no-repeat -64px -25px;
+}
+
+treecontrol.tree-dark li.tree-collapsed i.tree-branch-head {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: -20px;
+    cursor: pointer;
+    background: url("/resources/images/tree-control/img_treeview_default.gif")  no-repeat -64px -25px;
+}
+
+treecontrol.tree-dark li.tree-leaf i.tree-leaf-head {
+    padding: 1px 10px;
+    width: 16px; height: 16px;
+    background: none no-repeat;
+}
+
+treecontrol.tree-dark li .tree-selected {
+    font-weight: bold;
+}
+
+treecontrol.tree-dark li .tree-unselectable {
+    color: #777;
+}
+
+treecontrol.tree-dark {
+    color: #ddd;
+}
+/*dashboard popup*/
+treecontrol.tree-pop-icon li i.tree-branch-head{vertical-align: sub;}
+treecontrol.tree-pop-icon li > treeitem ul{margin-top: 0px;}
+
+
+treecontrol ul{position: relative;}
+treecontrol li{position: relative;}
+treecontrol ul:before{content:"";display:block;width:0;position:absolute;top:12px;bottom:14px;left:6px;border-left:1px dotted #555;}
+treeitem ul:before{content:"";display:block;width:0;position:absolute;top:0px;bottom:13px;left:5px;border-left:1px dotted #555;}
+treeitem ul{margin-top: -5px;}
+treecontrol li{margin:0;padding:0 1.5em; line-height:2em; font-weight:bold;position:relative;}
+treecontrol li:before{  content:"";display:block;width:10px;height:0;border-top:1px dotted #555;margin-top:-1px; position:absolute;top:1em;left:6px;}
+.mu-tree-user treeitem ul{margin-top: 1px;}
+.mu-tree-user .tree-branch-head{vertical-align: middle;}
+treecontrol input{display: none;}

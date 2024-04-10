@@ -1,0 +1,51 @@
+{
+	"nodes": {
+		"node": [
+			{
+				"rack": "/default-rack",
+				"healthReport": "",
+				"availMemoryMB": 8192,
+				"version": "2.7.2",
+				"nodeHostName": "em-data03",
+				"nodeHTTPAddress": "em-data03:8042",
+				"numContainers": 0,
+				"usedMemoryMB": 0,
+				"usedVirtualCores": 0,
+				"state": "RUNNING",
+				"id": "em-data03:52284",
+				"availableVirtualCores": 4,
+				"lastHealthUpdate": 1470818520920
+			},
+			{
+				"rack": "/default-rack",
+				"healthReport": "",
+				"availMemoryMB": 8192,
+				"version": "2.7.2",
+				"nodeHostName": "em-data01",
+				"nodeHTTPAddress": "em-data01:8042",
+				"numContainers": 0,
+				"usedMemoryMB": 0,
+				"usedVirtualCores": 0,
+				"state": "RUNNING",
+				"id": "em-data01:40876",
+				"availableVirtualCores": 4,
+				"lastHealthUpdate": 1470818523900
+			},
+			{
+				"rack": "/default-rack",
+				"healthReport": "",
+				"availMemoryMB": 8192,
+				"version": "2.7.2",
+				"nodeHostName": "em-data02",
+				"nodeHTTPAddress": "em-data02:8042",
+				"numContainers": 0,
+				"usedMemoryMB": 0,
+				"usedVirtualCores": 0,
+				"state": "RUNNING",
+				"id": "em-data02:54502",
+				"availableVirtualCores": 4,
+				"lastHealthUpdate": 1470818252501
+			}
+		]
+	}
+}

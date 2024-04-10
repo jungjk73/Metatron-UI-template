@@ -1,0 +1,106 @@
+{
+	"yarn" : {
+		"timeCondition" : [ "elapsed", "cpuTimeSpent", "hdfsRead", "hdfsWritten" ],
+		"gridColumn" : [
+			{ "headerName" : "Type", "field" : "applicationType", "cellStyle" : { "text-align" : "center" }, "width": 100, "minWidth": 100 },
+			{ "headerName" : "Submit Time", "field" : "submitTime", "cellStyle" : { "text-align" : "center" }, "width": 140, "minWidth": 140 },
+			{ "headerName" : "Start Time", "field" : "startTime", "cellStyle" : { "text-align" : "center" }, "width": 140, "minWidth": 140 },
+			{ "headerName" : "End Time", "field" : "finishTime", "cellStyle" : { "text-align" : "center" },	"width": 140, "minWidth": 140 },
+			{ "headerName" : "Application Name", "field" : "jobName", "cellStyle" : { "text-align" : "left" }, "width": 300, "minWidth": 300, "cellRenderer" : "tooltipRenderer" },
+			{ "headerName" : "Status", "field" : "state", "cellStyle" : { "text-align" : "center" }, "width": 100, "minWidth": 100 },
+			{ "headerName" : "Application ID", "field" : "jobId", "cellStyle" : { "text-align" : "center" }, "width": 180, "minWidth": 180 , "cellRenderer" : "tooltipRenderer"},
+			{ "headerName" : "Running Time", "field" : "elapsed", "cellStyle" : { "text-align" : "center" }, "width": 115, "minWidth": 115, "cellRenderer" : "numberFormatter" },
+			{ "headerName" : "CPU Time(s)", "field" : "cpuTimeSpent", "cellStyle" : { "text-align" : "center" }, "width": 110, "minWidth": 110, "cellRenderer" : "numberFormatter" },
+			{ "headerName" : "HDFS Read(MB)", "field" : "hdfsRead", "cellStyle" : { "text-align" : "center" }, "width": 130, "minWidth": 130, "cellRenderer" : "numberFormatter" },
+			{ "headerName" : "HDFS Write(MB)", "field" : "hdfsWritten", "cellStyle" : { "text-align" : "center" }, "width": 130, "minWidth": 130, "cellRenderer" : "numberFormatter" },
+			{ "headerName" : "User", "field" : "userName", "cellStyle" : { "text-align" : "center" }, "width": 100, "minWidth": 100 },
+			{ "headerName" : "Pool", "field" : "queue", "cellStyle" : { "text-align" : "center" }, "width": 100, "minWidth": 100 },
+			{ "headerName" : "Map", "field" : "mapsTotal", "cellStyle" : { "text-align" : "center" }, "width": 100, "minWidth": 100, "cellRenderer" : "numberFormatter" },
+			{ "headerName" : "Reduce", "field" : "reducesTotal", "cellStyle" : { "text-align" : "center" }, "width": 100, "minWidth": 100, "cellRenderer" : "numberFormatter" }
+		]
+	},
+	"spark" : {
+	  "timeCondition" : [ "elapsed", "cpuTimeSpent", "hdfsRead", "hdfsWritten" ],
+	  "gridColumn" : [
+		{ "headerName" : "Type", "field" : "applicationType", "cellStyle" : { "text-align" : "center" }, "width": 100, "minWidth": 100 },
+		{ "headerName" : "Submit Time", "field" : "submitTime", "cellStyle" : { "text-align" : "center" }, "width": 140, "minWidth": 140 },
+		{ "headerName" : "Start Time", "field" : "startTime", "cellStyle" : { "text-align" : "center" }, "width": 140, "minWidth": 140 },
+		{ "headerName" : "End Time", "field" : "finishTime", "cellStyle" : { "text-align" : "center" },	"width": 140, "minWidth": 140 },
+		{ "headerName" : "Application Name", "field" : "jobName", "cellStyle" : { "text-align" : "left" }, "width": 300, "minWidth": 300, "cellRenderer" : "tooltipRenderer" },
+		{ "headerName" : "Status", "field" : "state", "cellStyle" : { "text-align" : "center" }, "width": 100, "minWidth": 100 },
+		{ "headerName" : "Application ID", "field" : "jobId", "cellStyle" : { "text-align" : "center" }, "width": 180, "minWidth": 180 , "cellRenderer" : "tooltipRenderer"},
+		{ "headerName" : "Running Time", "field" : "elapsed", "cellStyle" : { "text-align" : "center" }, "width": 115, "minWidth": 115, "cellRenderer" : "numberFormatter" },
+		{ "headerName" : "CPU Time(s)", "field" : "cpuTimeSpent", "cellStyle" : { "text-align" : "center" }, "width": 110, "minWidth": 110, "cellRenderer" : "numberFormatter" },
+		{ "headerName" : "HDFS Read(MB)", "field" : "hdfsRead", "cellStyle" : { "text-align" : "center" }, "width": 130, "minWidth": 130, "cellRenderer" : "numberFormatter" },
+		{ "headerName" : "HDFS Write(MB)", "field" : "hdfsWritten", "cellStyle" : { "text-align" : "center" }, "width": 130, "minWidth": 130, "cellRenderer" : "numberFormatter" },
+		{ "headerName" : "User", "field" : "userName", "cellStyle" : { "text-align" : "center" }, "width": 100, "minWidth": 100 },
+		{ "headerName" : "Pool", "field" : "queue", "cellStyle" : { "text-align" : "center" }, "width": 100, "minWidth": 100 },
+		{ "headerName" : "Map", "field" : "mapsTotal", "cellStyle" : { "text-align" : "center" }, "width": 100, "minWidth": 100, "cellRenderer" : "numberFormatter" },
+		{ "headerName" : "Reduce", "field" : "reducesTotal", "cellStyle" : { "text-align" : "center" }, "width": 100, "minWidth": 100, "cellRenderer" : "numberFormatter" }
+	  ]
+	},
+	"hive" : {
+		"timeCondition" : [ "elapsed", "cpuTimeSpent", "hdfsRead", "hdfsWritten" ],
+		"gridColumn" : [
+			{ "headerName" : "Workflow Name", "field" : "hiveSessionId", "cellStyle" : { "text-align" : "center" }, "width": 250, "minWidth": 250, "cellRenderer" : "tooltipRenderer" },
+			{ "headerName" : "Submit Time", "field" : "submitTime", "cellStyle" : { "text-align" : "center" }, "width": 140, "minWidth": 140 },
+			{ "headerName" : "Job ID", "field" : "jobId", "cellStyle" : { "text-align" : "center" }, "width": 180, "minWidth": 180 },
+			{ "headerName" : "Mapreduce Job User", "field" : "mapreduceJobUsername", "cellStyle" : { "text-align" : "center" }, "width": 160, "minWidth": 160 }
+		],
+		"gridColumn2" : [
+			{ "headerName" : "Submit Time", "field" : "submitTime", "cellStyle" : { "text-align" : "center" }, "width": 140, "minWidth": 140 },
+			{ "headerName" : "Start Time", "field" : "startTime", "cellStyle" : { "text-align" : "center" }, "width": 140, "minWidth": 140 },
+			{ "headerName" : "End Time", "field" : "finishTime", "cellStyle" : { "text-align" : "center" }, "width": 140, "minWidth": 140 },
+			{ "headerName" : "Job Name", "field" : "jobName", "cellStyle" : { "text-align" : "left" }, "width": 180, "minWidth": 180, "cellRenderer" : "tooltipRenderer" },
+			{ "headerName" : "Status", "field" : "state", "cellStyle" : { "text-align" : "center" }, "width": 100, "minWidth": 100 },
+			{ "headerName" : "Job ID", "field" : "jobId", "cellStyle" : { "text-align" : "center" }, "width": 180, "minWidth": 180 , "cellRenderer" : "tooltipRenderer"},
+			{ "headerName" : "Running Time", "field" : "elapsed", "cellStyle" : { "text-align" : "center" }, "width": 115, "minWidth": 115, "cellRenderer" : "numberFormatter" },
+			{ "headerName" : "CPU Time(s)", "field" : "cpuTimeSpent", "cellStyle" : { "text-align" : "center" }, "width": 110, "minWidth": 110, "cellRenderer" : "numberFormatter" },
+			{ "headerName" : "HDFS Read(MB)", "field" : "hdfsRead", "cellStyle" : { "text-align" : "center" }, "width": 130, "minWidth": 130, "cellRenderer" : "numberFormatter" },
+			{ "headerName" : "HDFS Write(MB)", "field" : "hdfsWritten", "cellStyle" : { "text-align" : "center" }, "width": 130, "minWidth": 130, "cellRenderer" : "numberFormatter" },
+			{ "headerName" : "User", "field" : "userName", "cellStyle" : { "text-align" : "center" }, "width": 100, "minWidth": 100 , "cellRenderer" : "tooltipRenderer"},
+			{ "headerName" : "Pool", "field" : "queue", "cellStyle" : { "text-align" : "center" }, "width": 100, "minWidth": 100 , "cellRenderer" : "tooltipRenderer"},
+			{ "headerName" : "Map", "field" : "mapsTotal", "cellStyle" : { "text-align" : "center" }, "width": 100, "minWidth": 100, "cellRenderer" : "numberFormatter" },
+			{ "headerName" : "Reduce", "field" : "reducesTotal", "cellStyle" : { "text-align" : "center" }, "width": 100, "minWidth": 100, "cellRenderer" : "numberFormatter"}
+		]
+	},
+	"presto" : {
+		"timeCondition" : [ "completed", "elapsedTime", "cpuTimeSpent", "hdfsRead", "hdfsWritten" ],
+		"gridColumn" : [
+			{ "headerName" : "Start Time", "field" : "startTime", "cellStyle" : { "text-align" : "center" }, "width": 140, "minWidth": 140 },
+			{ "headerName" : "End Time", "field" : "endTime", "cellStyle" : { "text-align" : "center" },	"width": 140, "minWidth": 140 },
+			{ "headerName" : "Query", "field" : "query", "cellStyle" : { "text-align" : "left" }, "width": 400, "minWidth": 400, "cellRenderer" : "plainTextRenderer" },
+			{ "headerName" : "Status", "field" : "state", "cellStyle" : { "text-align" : "center" }, "width": 100, "minWidth": 100 },
+			{ "headerName" : "Running Time", "field" : "elapsedTime", "cellStyle" : { "text-align" : "center" }, "width": 115, "minWidth": 115 },
+			{ "headerName" : "Query ID", "field" : "queryId", "cellStyle" : { "text-align" : "center" }, "width": 180, "minWidth": 180 , "cellRenderer" : "tooltipRenderer"},
+			{ "headerName" : "User", "field" : "userName", "cellStyle" : { "text-align" : "center" }, "width": 100, "minWidth": 100 , "cellRenderer" : "tooltipRenderer"},
+			{ "headerName" : "Remote User Address", "field" : "remoteUserAddress", "cellStyle" : { "text-align" : "center" }, "width": 160, "minWidth": 160 , "cellRenderer" : "tooltipRenderer"},
+			{ "headerName" : "Source", "field" : "source", "cellStyle" : { "text-align" : "center" }, "width": 100, "minWidth": 100 , "cellRenderer" : "tooltipRenderer"},
+			{ "headerName" : "Completed Time", "field" : "executionTimeMillis", "cellStyle" : { "text-align" : "center" }, "width": 127, "minWidth": 127 },
+			{ "headerName" : "CPU Time(s)", "field" : "cpuTimeMillis", "cellStyle" : { "text-align" : "center" }, "width": 110, "minWidth": 110 }
+		]
+	},
+	"hive-ddl" : {
+		"timeCondition" : [],
+		"gridColumn" : [
+			{ "headerName" : "Submit Time", "field" : "submitTime", "cellStyle" : { "text-align" : "center" }, "width": 140, "minWidth": 140 },
+			{ "headerName" : "Query ID", "field" : "queryId", "cellStyle" : { "text-align" : "center" }, "width": 400, "minWidth": 400 , "cellRenderer" : "tooltipRenderer"},
+			{ "headerName" : "Query", "field" : "query", "cellStyle" : { "text-align" : "left" }, "width": 790, "minWidth": 790 , "cellRenderer" : "tooltipRenderer"},
+			{ "headerName" : "User", "field" : "userName", "cellStyle" : { "text-align" : "center" }, "width": 130, "minWidth": 130 , "cellRenderer" : "tooltipRenderer"}
+		]
+	},
+	"druid" : {
+		"timeCondition" : [ "elapsed" ],
+		"gridColumn" : [
+			{ "headerName" : "Submit Time", "field" : "submitTime", "cellStyle" : { "text-align" : "center" }, "width": 140, "minWidth": 140 },
+			{ "headerName" : "Start Time", "field" : "startTime", "cellStyle" : { "text-align" : "center" }, "width": 140, "minWidth": 140 },
+			{ "headerName" : "End Time", "field" : "finishTime", "cellStyle" : { "text-align" : "center" }, "width": 140, "minWidth": 140 },
+			{ "headerName" : "Status", "field" : "state", "cellStyle" : { "text-align" : "center" }, "width": 100, "minWidth": 100 , "cellRenderer" : "tooltipRenderer"},
+			{ "headerName" : "Job ID", "field" : "id", "cellStyle" : { "text-align" : "center" }, "width": 360, "minWidth": 360 , "cellRenderer" : "tooltipRenderer"},
+			{ "headerName" : "Running Time", "field" : "elapsed", "cellStyle" : { "text-align" : "center" }, "width": 115, "minWidth": 115 },
+			{ "headerName" : "Location Host", "field" : "locationHost", "cellStyle" : { "text-align" : "center" }, "width": 120, "minWidth": 120 , "cellRenderer" : "tooltipRenderer"},
+			{ "headerName" : "Location Port", "field" : "locationPort", "cellStyle" : { "text-align" : "center" }, "width": 120, "minWidth": 120 , "cellRenderer" : "tooltipRenderer"},
+			{ "headerName" : "Payload", "field" : "payload", "cellStyle" : { "text-align" : "center" }, "width": 200, "minWidth": 200 , "cellRenderer" : "tooltipRenderer"}
+		]
+	}
+}

@@ -1,0 +1,302 @@
+{
+	"status": 200,
+	"request_time": "Mon Nov 14 18:44:38 KST 2016",
+	"response_time": "Wed Nov 16 13:18:43 KST 2016",
+	"elapsed_time": 153245123,
+	"body": {
+		"JobHandler": {
+			"scheduler": {
+				"schedulerInfo": {
+					"rootQueue": {
+						"usedResources": {
+							"memory": 9216,
+							"vCores": 3
+						},
+						"maxApps": 2147483647,
+						"childQueues": [
+							{
+								"usedResources": {
+									"memory": 0,
+									"vCores": 0
+								},
+								"maxApps": 1,
+								"queueName": "root.Q6",
+								"steadyFairResources": {
+									"memory": 11,
+									"vCores": 0
+								},
+								"clusterResources": {
+									"memory": 16384,
+									"vCores": 8
+								},
+								"fairResources": {
+									"memory": 11,
+									"vCores": 0
+								},
+								"numActiveApps": 0,
+								"maxResources": {
+									"memory": 11,
+									"vCores": 3
+								},
+								"xsi:type": "fairSchedulerLeafQueueInfo",
+								"minResources": {
+									"memory": 1,
+									"vCores": 1
+								},
+								"numPendingApps": 1,
+								"schedulingPolicy": "fair"
+							},
+							{
+								"usedResources": {
+									"memory": 0,
+									"vCores": 0
+								},
+								"maxApps": 1,
+								"childQueues": [
+									{
+										"usedResources": {
+											"memory": 0,
+											"vCores": 0
+										},
+										"maxApps": 1,
+										"queueName": "root.QQ11.QQ11",
+										"steadyFairResources": {
+											"memory": 5,
+											"vCores": 0
+										},
+										"clusterResources": {
+											"memory": 16384,
+											"vCores": 8
+										},
+										"fairResources": {
+											"memory": 0,
+											"vCores": 0
+										},
+										"numActiveApps": 0,
+										"maxResources": {
+											"memory": 5,
+											"vCores": 1
+										},
+										"xsi:type": "fairSchedulerLeafQueueInfo",
+										"minResources": {
+											"memory": 1,
+											"vCores": 1
+										},
+										"numPendingApps": 0,
+										"schedulingPolicy": "fair"
+									},
+									{
+										"usedResources": {
+											"memory": 0,
+											"vCores": 0
+										},
+										"maxApps": 1,
+										"queueName": "root.QQ11.QQ22",
+										"steadyFairResources": {
+											"memory": 5,
+											"vCores": 0
+										},
+										"clusterResources": {
+											"memory": 16384,
+											"vCores": 8
+										},
+										"fairResources": {
+											"memory": 0,
+											"vCores": 0
+										},
+										"numActiveApps": 0,
+										"maxResources": {
+											"memory": 5,
+											"vCores": 1
+										},
+										"xsi:type": "fairSchedulerLeafQueueInfo",
+										"minResources": {
+											"memory": 1,
+											"vCores": 1
+										},
+										"numPendingApps": 0,
+										"schedulingPolicy": "fair"
+									},
+									{
+										"usedResources": {
+											"memory": 0,
+											"vCores": 0
+										},
+										"maxApps": 1,
+										"queueName": "root.QQ11.QQ33",
+										"steadyFairResources": {
+											"memory": 5,
+											"vCores": 0
+										},
+										"clusterResources": {
+											"memory": 16384,
+											"vCores": 8
+										},
+										"fairResources": {
+											"memory": 0,
+											"vCores": 0
+										},
+										"numActiveApps": 0,
+										"maxResources": {
+											"memory": 5,
+											"vCores": 1
+										},
+										"xsi:type": "fairSchedulerLeafQueueInfo",
+										"minResources": {
+											"memory": 1,
+											"vCores": 1
+										},
+										"numPendingApps": 0,
+										"schedulingPolicy": "fair"
+									}
+								],
+								"queueName": "root.QQ11",
+								"steadyFairResources": {
+									"memory": 11,
+									"vCores": 0
+								},
+								"clusterResources": {
+									"memory": 16384,
+									"vCores": 8
+								},
+								"fairResources": {
+									"memory": 11,
+									"vCores": 0
+								},
+								"numActiveApps": 0,
+								"maxResources": {
+									"memory": 11,
+									"vCores": 1
+								},
+								"xsi:type": "fairSchedulerLeafQueueInfo",
+								"minResources": {
+									"memory": 1,
+									"vCores": 1
+								},
+								"numPendingApps": 1,
+								"schedulingPolicy": "fair"
+							},
+							{
+								"usedResources": {
+									"memory": 0,
+									"vCores": 0
+								},
+								"maxApps": 1,
+								"childQueues": {
+									"usedResources": {
+										"memory": 0,
+										"vCores": 0
+									},
+									"maxApps": 1,
+									"queueName": "root.Q5.q5",
+									"steadyFairResources": {
+										"memory": 5,
+										"vCores": 0
+									},
+									"clusterResources": {
+										"memory": 16384,
+										"vCores": 8
+									},
+									"fairResources": {
+										"memory": 0,
+										"vCores": 0
+									},
+									"numActiveApps": 0,
+									"maxResources": {
+										"memory": 5,
+										"vCores": 1
+									},
+									"xsi:type": "fairSchedulerLeafQueueInfo",
+									"minResources": {
+										"memory": 1,
+										"vCores": 1
+									},
+									"numPendingApps": 0,
+									"schedulingPolicy": "fair"
+								},
+								"queueName": "root.Q5",
+								"steadyFairResources": {
+									"memory": 11,
+									"vCores": 0
+								},
+								"clusterResources": {
+									"memory": 16384,
+									"vCores": 8
+								},
+								"fairResources": {
+									"memory": 0,
+									"vCores": 0
+								},
+								"maxResources": {
+									"memory": 11,
+									"vCores": 2
+								},
+								"minResources": {
+									"memory": 1,
+									"vCores": 1
+								},
+								"schedulingPolicy": "fair"
+							},
+							{
+								"usedResources": {
+									"memory": 0,
+									"vCores": 0
+								},
+								"maxApps": 2147483647,
+								"queueName": "root.default",
+								"steadyFairResources": {
+									"memory": 2044,
+									"vCores": 0
+								},
+								"clusterResources": {
+									"memory": 16384,
+									"vCores": 8
+								},
+								"fairResources": {
+									"memory": 0,
+									"vCores": 0
+								},
+								"numActiveApps": 0,
+								"maxResources": {
+									"memory": 16384,
+									"vCores": 8
+								},
+								"xsi:type": "fairSchedulerLeafQueueInfo",
+								"minResources": {
+									"memory": 0,
+									"vCores": 0
+								},
+								"numPendingApps": 0,
+								"schedulingPolicy": "fair"
+							}
+						],
+						"queueName": "root",
+						"steadyFairResources": {
+							"memory": 16384,
+							"vCores": 8
+						},
+						"clusterResources": {
+							"memory": 16384,
+							"vCores": 8
+						},
+						"fairResources": {
+							"memory": 16384,
+							"vCores": 8
+						},
+						"maxResources": {
+							"memory": 16384,
+							"vCores": 8
+						},
+						"minResources": {
+							"memory": 0,
+							"vCores": 0
+						},
+						"schedulingPolicy": "fair"
+					},
+					"xsi:type": "fairScheduler",
+					"xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance"
+				}
+			}
+		}
+	}
+}

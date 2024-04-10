@@ -1,0 +1,20 @@
+#pop-menu-btn {
+  height: 40px;
+  width: 40px;
+  border: 2px solid white;
+  display: inline-block;
+  margin-right: 30px;
+  background-image: url("../images/hadoop.png");
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pop-menu-link {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  padding: 10px 20px;
+  display: inline-block;
+}

@@ -1,0 +1,47 @@
+/********  Common Css  ********/
+.position-relatvie {    
+    position: relative;
+}
+
+
+
+/******** RPC Monitoring, Memory History Page ********/
+.all-chart-page .cont-area-chart {
+    position: relative;
+    padding: 0px;
+    height: 205px;
+    background-color: #fff;
+}
+
+.all-chart-page .chart-box {
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #000;
+}
+
+.all-chart-page .chartTitleArea .chartZooomOutBtnArea {
+    width: 100%;
+    text-align: right;
+    padding-right: 38px;
+}
+
+.all-chart-page .chartTitleArea .chartZooomOutBtnArea .mu-btn {
+    min-width: 55px;
+    height: 25px;
+    line-height: 23px;
+    background-color: #808080;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.all-chart-page .unit-label {
+    position: relative;
+    left: 27px;
+    top: 46px;
+    z-index: 1;
+    float: left;
+    margin-top: -16px;
+}
+

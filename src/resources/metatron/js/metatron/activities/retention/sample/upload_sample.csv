@@ -1,0 +1,5 @@
+JOB_NAME,DATA_TYPE,EXEC_MIN,EXEC_HOUR,EXEC_DAY,EXEC_YEAR,HOST,LOGIN_ID,LOGIN_PASSWD,RETENTION_PERIOD,INPUT_CMD,EXTERNAL_CMD
+Hive Managed,Hive,*,*,*,*,~호스트IP,root,springbreeze1@,1,alter table flynn.salesdata drop if exists partition (date_of_sale='MM-DD-YYYY'),
+Hive External,Hive,*,*,*,*,~호스트IP,root,springbreeze1@,1,alter table flynn.salesdata_ext drop partition (date_of_sale='mm-dd-yyyy'),/user/hive/warehouse/flynn.db/salesdata_ext/date_of_sale=MM-DD-YYYY
+HDFS,HDFS,*,*,*,*,~호스트IP,root,springbreeze1@,1,/user/hive/warehouse/YYYYMMDD,
+LogFile,LogFile,*,*,*,*,~호스트IP,root,springbreeze1@,1,rm -r /home/eva/temp/YYYY.MM-DD - YYYY-MM.DD,

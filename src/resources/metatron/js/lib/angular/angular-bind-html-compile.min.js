@@ -1,0 +1,1 @@
+define(["app"],function(t){"use strict";t.directive("bindHtmlCompile",["$compile",function(t){return{restrict:"A",scope:!1,link:function(i,n,e){var o=i.$watch(function(){return i.$eval(e.bindHtmlCompile)},function(e){n.html(e&&e.toString());var o=i;i.titleCompileScope&&(o=i.titleCompileScope),t(n.contents())(o)});i.$on("$destroy",function(){o()})}}}])});

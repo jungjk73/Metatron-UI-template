@@ -1,0 +1,146 @@
+#powerTip {
+    cursor: default;
+    background-color: #2b3350;
+    border : solid 1px #50597b;
+    /*background-color: rgba(0, 0, 0, .8);*/
+    border-radius: 6px;
+    color: #fff;
+    display: none;
+    padding: 10px;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 2147483647
+}
+
+#powerTip:before {
+    content: "";
+    position: absolute
+}
+
+#powerTip.n:before, #powerTip.s:before {
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    left: 50%;
+    margin-left: -5px
+}
+
+#powerTip.e:before, #powerTip.w:before {
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    margin-top: -5px;
+    top: 50%
+}
+
+#powerTip.n:before {
+    border-top: 10px solid #333;
+    border-top: 10px solid rgba(0, 0, 0, .8);
+    bottom: -10px
+}
+
+#powerTip.e:before {
+    border-right: 10px solid #333;
+    border-right: 10px solid rgba(0, 0, 0, .8);
+    left: -10px
+}
+
+#powerTip.s:before {
+    border-bottom: 10px solid #333;
+    border-bottom: 10px solid rgba(0, 0, 0, .8);
+    top: -10px
+}
+
+#powerTip.w:before {
+    border-left: 10px solid #333;
+    border-left: 10px solid rgba(0, 0, 0, .8);
+    right: -10px
+}
+
+#powerTip.ne:before, #powerTip.se:before {
+    border-right: 10px solid transparent;
+    border-left: 0;
+    left: 10px
+}
+
+#powerTip.nw:before, #powerTip.sw:before {
+    border-left: 10px solid transparent;
+    border-right: 0;
+    right: 10px
+}
+
+#powerTip.ne:before, #powerTip.nw:before {
+    border-top: 10px solid #333;
+    border-top: 10px solid rgba(0, 0, 0, .8);
+    bottom: -10px
+}
+
+#powerTip.se:before, #powerTip.sw:before {
+    border-bottom: 10px solid #333;
+    border-bottom: 10px solid rgba(0, 0, 0, .8);
+    top: -10px
+}
+
+#powerTip.nw-alt:before, #powerTip.ne-alt:before, #powerTip.sw-alt:before, #powerTip.se-alt:before {
+    border-top: 10px solid #333;
+    border-top: 10px solid rgba(0, 0, 0, .8);
+    bottom: -10px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    left: 10px
+}
+
+#powerTip.ne-alt:before {
+    left: auto;
+    right: 10px
+}
+
+#powerTip.sw-alt:before, #powerTip.se-alt:before {
+    border-top: 0;
+    border-bottom: 10px solid #333;
+    border-bottom: 10px solid rgba(0, 0, 0, .8);
+    bottom: auto;
+    top: -10px
+}
+
+#powerTip.se-alt:before {
+    left: auto;
+    right: 10px
+}
+
+/* metatron custom css */
+#powerTip .tooltip_title {
+    text-align: center;
+    font-weight: bold;
+    /* margin: 10px; */
+    background-color: #1f253d;
+    border-bottom: 1px solid #474747;
+    padding: 12px 20px;
+}
+#powerTip .tooltip_detail {
+    width : 100%;
+    display : table;
+    border-bottom: 1px solid #262626;
+    padding : 10px 0 10px 0;
+}
+
+#powerTip .tooltip_detail .row{
+    display : table-row;
+}
+#powerTip .tooltip_detail .row > div {
+    display : table-cell;
+    padding : 5px;
+    width : 50%;
+}
+
+#powerTip .tooltip_detail .row .title {
+    font-weight : bold;
+}
+
+#powerTip .mu-formbox-vertical tbody > tr{height:31px}
+#powerTip .mu-formbox-vertical tbody > tr > th,#powerTip .mu-formbox-vertical tbody > tr > td{padding:0 8px;vertical-align:middle}
+#powerTip .mu-formbox-vertical tbody > tr > th+th,#powerTip .mu-formbox-vertical tbody > tr > th+td,#powerTip .mu-formbox-vertical tbody > tr > td+td,#powerTip .mu-formbox-vertical tbody > tr > td+th{border-left:1px solid #474747}
+#powerTip .mu-formbox-vertical tbody > tr+tr > th,#powerTip .mu-formbox-vertical tbody > tr+tr > td{border-top:1px solid #474747}
+#powerTip .mu-formbox-vertical tbody > tr > th{background-color:#1a1b1b;text-align:left;font-weight:bold; color:#eee;}
+#powerTip .mu-formbox-vertical tbody > tr:first-child > th,#powerTip .mu-formbox-vertical tbody > tr:first-child > td{border-top:1px solid #474747}
+#powerTip .mu-formbox-vertical tbody > tr:last-child > th,#powerTip .mu-formbox-vertical tbody > tr:last-child > td{border-bottom:1px solid #474747}
+#powerTip .mu-formbox-vertical tbody > tr > td > .mu-input,#powerTip .mu-formbox tbody > tr > td > .mu-btn,#powerTip .mu-formbox tbody > tr > td > .mu-selectbox .mu-value{border-radius:0}
+#powerTip .mu-formbox-vertical tbody > tr > td > .mu-selectbox,#powerTip .mu-formbox tbody > tr > td > .mu-selectbox .mu-value{width:100%}

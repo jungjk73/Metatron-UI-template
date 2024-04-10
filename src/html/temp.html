@@ -1,0 +1,1765 @@
+<html lang="ko" class="theme-LIGHT">
+  <head>
+    <style type="text/css">
+      @charset "UTF-8";
+      [ng\:cloak],
+      [ng-cloak],
+      [data-ng-cloak],
+      [x-ng-cloak],
+      .ng-cloak,
+      .x-ng-cloak,
+      .ng-hide:not(.ng-hide-animate) {
+        display: none !important;
+      }
+      ng\:form {
+        display: block;
+      }
+      .ng-animate-shim {
+        visibility: hidden;
+      }
+      .ng-anchor {
+        position: absolute;
+      }
+    </style>
+    <title></title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/resources/css/reset.css" />
+    <link rel="stylesheet" href="/resources/css/jquery/jquery.powertip.min.css" />
+    <link rel="stylesheet" href="/resources/css/angularjs/tree-control.css" />
+    <link rel="stylesheet" href="/resources/css/angularjs/tree-control-attribute.css" />
+    <link rel="stylesheet" href="/resources/css/angularjs/ngDialog.css" />
+    <link rel="stylesheet" href="/resources/css/angularjs/ngDialog-theme-default.css" />
+
+    <link rel="stylesheet" href="/resources/css/angularjs/theme-fresh.css" id="css_theme_fresh" />
+    <link rel="stylesheet" href="/resources/css/angularjs/theme-fresh-light.css" id="css_theme_fresh_light" />
+
+    <link rel="stylesheet" href="/resources/css/common_integrated.css" />
+    <link rel="stylesheet" href="/resources/css/layout_integrated.css" />
+    <link rel="stylesheet" href="/resources/css/style_integrated.css" />
+
+    <link rel="stylesheet" href="/resources/css/metatron.css" />
+    <link rel="stylesheet" href="/resources/css/dev.css" />
+
+    <!-- JS -->
+    <script type="text/javascript" src="/resources/js/lib/jquery/spin.min.js"></script>
+    <style type="text/css"></style>
+    <script type="text/javascript" src="/resources/js/lib/echart/echarts.common.min.js"></script>
+    <script type="text/javascript" src="/resources/js/framework/common/log.js"></script>
+    <script type="text/javascript" src="/resources/js/framework/common/common.js"></script>
+    <script type="text/javascript" src="/resources/js/metatron/view/left-common.js"></script>
+
+    <link themer-link="" />
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="/resources/js/metatron/main.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="/resources/js/lib/underscore/underscore-1.8.3.min.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="moment" src="/resources/js/lib/moment/moment-2.11.2.min.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mark" src="/resources/js/lib/jquery/jquery.mark.min.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="/resources/js/lib/jquery/jquery-2.2.0.min.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery-ui" src="/resources/js/lib/jquery/jquery-ui-1.11.4.min.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular" src="/resources/js/lib/angular/angular.min.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery-blockUI" src="/resources/js/lib/jquery/jquery.blockUI.min.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery-slimscroll" src="/resources/js/lib/jquery/jquery.slimscroll.min.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery-dateFormat" src="/resources/js/lib/jquery/jquery-dateFormat.min.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="globalize" src="/resources/js/framework/common/globalize.min.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-route" src="/resources/js/lib/angular/angular-route.min.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-translate" src="/resources/js/lib/angular/angular-translate.min.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-cookies" src="/resources/js/lib/angular/angular-cookies.min.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-translate-loader-static-files" src="/resources/js/lib/angular/angular-translate-loader-static-files.min.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="app" src="/resources/js/metatron/app.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="http-interceptor-factory" src="/resources/js/framework/factory/http-interceptor-factory.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="exception-factory" src="/resources/js/framework/factory/exception-factory.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dependency-resolver-factory" src="/resources/js/framework/factory/dependency-resolver-factory.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common-util-factory" src="/resources/js/metatron/common/factory/common-util-factory.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="grid-renderer-factory" src="/resources/js/metatron/common/factory/grid-renderer-factory.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="config-manager-provider" src="/resources/js/framework/provider/config-manager-provider.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="window-reload-detect-provider" src="/resources/js/framework/provider/window-reload-detect-provider.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="html-filter" src="/resources/js/framework/filter/html-filter.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="route-config" src="/resources/js/metatron/route.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/controller/header-controller" src="/resources/js/metatron/common/controller/header-controller.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/controller/left-controller" src="/resources/js/metatron/common/controller/left-controller.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/directive/tooltip-menu-directive" src="/resources/js/metatron/common/directive/tooltip-menu-directive.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/directive/scroll-directive" src="/resources/js/metatron/common/directive/scroll-directive.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/service/alarm-service" src="/resources/js/metatron/common/service/alarm-service.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/service/alarm-manager" src="/resources/js/metatron/common/service/alarm-manager.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/service/data-service" src="/resources/js/metatron/common/service/data-service.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/service/websocket-service" src="/resources/js/metatron/common/service/websocket-service.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ag-grid" src="/resources/js/lib/angular/ag-grid.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ng-dialog" src="/resources/js/lib/angular/ng-dialog-1.2.0.min.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-echart" src="/resources/js/lib/echart/angular-echart.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-disabled" src="/resources/js/lib/angular/angular-disable-all.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-slimscroll" src="/resources/js/lib/angular/angular-slimscroll.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-tree-control" src="/resources/js/lib/angular/angular-tree-control-0.2.28.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="zingchart" src="/resources/js/lib/zingchart/zingchart.min.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-ui-router" src="/resources/js/lib/angular/angular-ui-router.min.js?ver=201602221114"></script>
+    <style type="text/css">
+      ag-grid-ng2 {
+        display: inline-block;
+      }
+      .ag-root {
+        /* set to relative, so absolute popups appear relative to this */
+        position: relative;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        /* was getting some 'should be there' scrolls, this sorts it out */
+        overflow: hidden;
+      }
+      .ag-font-style {
+        cursor: default;
+        font-size: 14px;
+        /* disable user mouse selection */
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .ag-no-scrolls {
+        white-space: nowrap;
+        display: inline-block;
+      }
+      .ag-scrolls {
+        height: 100%;
+      }
+      .ag-popup-backdrop {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+      }
+      .ag-header {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 100%;
+      }
+      .ag-pinned-left-header {
+        float: left;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: inline-block;
+        overflow: hidden;
+        height: 100%;
+      }
+      .ag-pinned-right-header {
+        float: right;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: inline-block;
+        overflow: hidden;
+        height: 100%;
+      }
+      .ag-header-viewport {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow: hidden;
+        height: 100%;
+      }
+      .ag-scrolls .ag-header-container {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative;
+        white-space: nowrap;
+        height: 100%;
+      }
+      .ag-no-scrolls .ag-header-container {
+        white-space: nowrap;
+      }
+      .ag-header-overlay {
+        display: block;
+        position: absolute;
+      }
+      .ag-header-cell {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        vertical-align: bottom;
+        text-align: center;
+        display: inline-block;
+        height: 100%;
+      }
+      .ag-header-cell-ghost {
+        font-size: 14px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        position: absolute;
+        background: #e5e5e5;
+        border: 1px solid #000;
+        cursor: move;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        padding: 3px;
+        line-height: 1.4;
+      }
+      .ag-header-cell-ghost img {
+        vertical-align: middle;
+        border: 0px;
+      }
+      .ag-header-cell-ghost-icon {
+        float: left;
+        padding-left: 2px;
+        padding-right: 2px;
+      }
+      .ag-header-group-cell {
+        height: 100%;
+        display: inline-block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .ag-header-group-cell-label {
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .ag-header-cell-label {
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .ag-header-cell-resize {
+        height: 100%;
+        width: 4px;
+        float: right;
+        cursor: col-resize;
+      }
+      .ag-header-expand-icon {
+        padding-left: 4px;
+      }
+      .ag-header-cell-menu-button {
+        float: right;
+      }
+      .ag-overlay-panel {
+        display: table;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+      .ag-overlay-wrapper {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+      }
+      .ag-body {
+        height: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      .ag-floating-top {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      .ag-pinned-left-floating-top {
+        float: left;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: inline-block;
+        overflow: hidden;
+        height: 100%;
+      }
+      .ag-pinned-right-floating-top {
+        float: right;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: inline-block;
+        overflow: hidden;
+        height: 100%;
+      }
+      .ag-floating-top-viewport {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow: hidden;
+        height: 100%;
+      }
+      .ag-floating-top-container {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative;
+        white-space: nowrap;
+      }
+      .ag-floating-bottom {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      .ag-pinned-left-floating-bottom {
+        float: left;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: inline-block;
+        overflow: hidden;
+        height: 100%;
+      }
+      .ag-pinned-right-floating-bottom {
+        float: right;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: inline-block;
+        overflow: hidden;
+        height: 100%;
+      }
+      .ag-floating-bottom-viewport {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow: hidden;
+        height: 100%;
+      }
+      .ag-floating-bottom-container {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative;
+        white-space: nowrap;
+      }
+      .ag-pinned-left-cols-viewport {
+        float: left;
+        overflow: hidden;
+      }
+      .ag-pinned-left-cols-container {
+        display: inline-block;
+        position: relative;
+      }
+      .ag-pinned-right-cols-viewport {
+        float: right;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+      .ag-pinned-right-cols-container {
+        display: inline-block;
+        position: relative;
+      }
+      .ag-body-viewport-wrapper {
+        height: 100%;
+      }
+      .ag-body-viewport {
+        overflow-x: auto;
+        overflow-y: auto;
+        height: 100%;
+      }
+      .ag-scrolls .ag-body-container {
+        position: relative;
+        display: inline-block;
+      }
+      .ag-scrolls .ag-row {
+        white-space: nowrap;
+        position: absolute;
+        width: 100%;
+      }
+      .ag-no-scrolls .ag-row {
+        position: relative;
+      }
+      .agile-gird-row:hover {
+        background-color: #f0f8ff;
+      }
+      .ag-row-group-panel {
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      .ag-cell {
+        display: inline-block;
+        white-space: nowrap;
+        height: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        position: absolute;
+      }
+      .ag-group-cell-entire-row {
+        width: 100%;
+        display: inline-block;
+        white-space: nowrap;
+        height: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .ag-footer-cell-entire-row {
+        width: 100%;
+        display: inline-block;
+        white-space: nowrap;
+        height: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .ag-large .ag-root {
+        font-size: 20px;
+      }
+      .ag-menu {
+        position: absolute;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .ag-menu-column-select-wrapper {
+        width: 200px;
+        height: 300px;
+      }
+      .ag-menu-list {
+        display: table;
+        border-collapse: collapse;
+      }
+      .ag-menu-option {
+        display: table-row;
+      }
+      .ag-menu-option-text {
+        display: table-cell;
+      }
+      .ag-menu-option-shortcut {
+        display: table-cell;
+      }
+      .ag-menu-option-icon {
+        display: table-cell;
+      }
+      .ag-menu-option-popup-pointer {
+        display: table-cell;
+      }
+      .ag-menu-separator {
+        display: table-row;
+      }
+      .ag-menu-separator-cell {
+        display: table-cell;
+      }
+      .ag-filter-list-viewport {
+        overflow-x: auto;
+        height: 200px;
+        width: 200px;
+      }
+      .ag-filter-list-container {
+        position: relative;
+        overflow: hidden;
+      }
+      .ag-filter-item {
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        position: absolute;
+      }
+      .ag-filter-filter {
+        width: 170px;
+        margin: 4px;
+      }
+      .ag-filter-select {
+        width: 110px;
+        margin: 4px 4px 0px 4px;
+      }
+      .ag-no-vertical-scroll .ag-scrolls {
+        height: unset;
+      }
+      .ag-no-vertical-scroll .ag-body {
+        height: unset;
+      }
+      .ag-no-vertical-scroll .ag-body-viewport-wrapper {
+        height: unset;
+      }
+      .ag-no-vertical-scroll .ag-body-viewport {
+        height: unset;
+      }
+      .ag-list-selection {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: default;
+      }
+      .ag-tool-panel {
+        width: 200px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: default;
+        height: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      .ag-column-select-indent {
+        display: inline-block;
+      }
+      .ag-column-select-column {
+        margin-left: 14px;
+        white-space: nowrap;
+      }
+      .ag-column-select-column-group {
+        white-space: nowrap;
+      }
+      .ag-column-select-panel {
+        height: 100%;
+        overflow: auto;
+      }
+      .ag-hidden {
+        display: none;
+      }
+      .ag-faded {
+        opacity: 0.3;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+        filter: alpha(opacity=30);
+      }
+      .ag-shake-left-to-right {
+        -webkit-animation-name: ag-shake-left-to-right;
+        -moz-animation-name: ag-shake-left-to-right;
+        -o-animation-name: ag-shake-left-to-right;
+        -ms-animation-name: ag-shake-left-to-right;
+        animation-name: ag-shake-left-to-right;
+        -webkit-animation-duration: 0.2s;
+        -moz-animation-duration: 0.2s;
+        -o-animation-duration: 0.2s;
+        -ms-animation-duration: 0.2s;
+        animation-duration: 0.2s;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -o-animation-iteration-count: infinite;
+        -ms-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        -moz-animation-direction: alternate;
+        -o-animation-direction: alternate;
+        -ms-animation-direction: alternate;
+        animation-direction: alternate;
+      }
+      @-moz-keyframes ag-shake-left-to-right {
+        from {
+          padding-left: 6px;
+          padding-right: 2px;
+        }
+        to {
+          padding-left: 2px;
+          padding-right: 6px;
+        }
+      }
+      @-webkit-keyframes ag-shake-left-to-right {
+        from {
+          padding-left: 6px;
+          padding-right: 2px;
+        }
+        to {
+          padding-left: 2px;
+          padding-right: 6px;
+        }
+      }
+      @-o-keyframes ag-shake-left-to-right {
+        from {
+          padding-left: 6px;
+          padding-right: 2px;
+        }
+        to {
+          padding-left: 2px;
+          padding-right: 6px;
+        }
+      }
+      @keyframes ag-shake-left-to-right {
+        from {
+          padding-left: 6px;
+          padding-right: 2px;
+        }
+        to {
+          padding-left: 2px;
+          padding-right: 6px;
+        }
+      }
+    </style>
+    <style type="text/css">
+      .ag-blue {
+        line-height: 1.4;
+      }
+      .ag-blue img {
+        vertical-align: middle;
+        border: 0px;
+      }
+      .ag-blue .ag-root {
+        border: 1px solid #9bc2e6;
+        font: 10pt Calibri, "Segoe UI", Thonburi, Arial, Verdana, sans-serif;
+      }
+      .ag-blue .ag-row-group-cell {
+        background: #5b9bd5;
+        border: 1px solid #808080;
+        padding: 2px;
+      }
+      .ag-blue .ag-row-group-cell-ghost {
+        opacity: 0.5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+        filter: alpha(opacity=50);
+      }
+      .ag-blue .ag-row-group-cell-text {
+        padding-left: 2px;
+        padding-right: 2px;
+      }
+      .ag-blue .ag-row-group-cell-button {
+        border: 1px solid transparent;
+        padding-left: 2px;
+        padding-right: 2px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+      }
+      .ag-blue .ag-row-group-cell-button:hover {
+        border: 1px solid #000;
+      }
+      .ag-blue .ag-row-group-empty-message {
+        padding-left: 2px;
+        padding-right: 2px;
+        border: 1px solid transparent;
+        color: #808080;
+      }
+      .ag-blue .ag-row-group-icon {
+        padding-right: 4px;
+      }
+      .ag-blue .ag-row-group-panel {
+        border-top: 1px solid #9bc2e6;
+        border-left: 1px solid #9bc2e6;
+        border-right: 1px solid #9bc2e6;
+        padding: 4px;
+        background-color: #ddebf7;
+        color: #fff;
+      }
+      .ag-blue .ag-cell {
+        top: -1px;
+        padding-left: 2px;
+        padding-right: 2px;
+        overflow: hidden;
+        white-space: nowrap;
+        letter-spacing: -0.02em;
+      }
+      .ag-blue .ag-cell-range-selected-1:not(.ag-cell-focus) {
+        background-color: rgba(120, 120, 120, 0.4);
+      }
+      .ag-blue .ag-cell-range-selected-2:not(.ag-cell-focus) {
+        background-color: rgba(80, 80, 80, 0.4);
+      }
+      .ag-blue .ag-cell-range-selected-3:not(.ag-cell-focus) {
+        background-color: rgba(40, 40, 40, 0.4);
+      }
+      .ag-blue .ag-cell-range-selected-4:not(.ag-cell-focus) {
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .ag-blue .ag-column-moving .ag-cell {
+        -webkit-transition: left 0.2s;
+        -moz-transition: left 0.2s;
+        -o-transition: left 0.2s;
+        -ms-transition: left 0.2s;
+        transition: left 0.2s;
+      }
+      .ag-blue .ag-cell-focus {
+        background: #fff;
+        border: 2px solid #217346;
+      }
+      .ag-blue .ag-cell-no-focus {
+        border-right: 1px dotted #9bc2e6;
+        border-top: 2px solid transparent;
+        border-left: 2px solid transparent;
+        border-bottom: 1px solid #9bc2e6;
+      }
+      .ag-blue .ag-cell-first-right-pinned {
+        border-left: 1px solid #9bc2e6;
+      }
+      .ag-blue .ag-cell-last-left-pinned {
+        border-right: 1px solid #9bc2e6;
+      }
+      .ag-blue .ag-cell-highlight {
+        border: 1px solid #006400;
+      }
+      .ag-blue .ag-cell-highlight-animation {
+        -webkit-transition: border 1s;
+        -moz-transition: border 1s;
+        -o-transition: border 1s;
+        -ms-transition: border 1s;
+        transition: border 1s;
+      }
+      .ag-blue .ag-header {
+        background-color: #5b9bd5;
+        border-bottom: 1px solid #9bc2e6;
+      }
+      .ag-blue .ag-no-scrolls .ag-header-container {
+        background-color: #5b9bd5;
+        border-bottom: 1px solid #9bc2e6;
+      }
+      .ag-blue .ag-header-cell {
+        border-right: 1px solid #9bc2e6;
+      }
+      .ag-blue .ag-header-cell-moving .ag-header-cell-label {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+      }
+      .ag-blue .ag-header-cell-moving-clone {
+        border-right: 1px solid #808080;
+        border-left: 1px solid #808080;
+        background-color: rgba(91, 155, 213, 0.8);
+      }
+      .ag-blue .ag-header-cell-moving {
+        background-color: #9bc2e6;
+      }
+      .ag-blue .ag-header-group-cell {
+        border-right: 1px solid #9bc2e6;
+      }
+      .ag-blue .ag-header-group-cell-with-group {
+        border-bottom: 1px solid #9bc2e6;
+      }
+      .ag-blue .ag-pinned-right-header {
+        border-left: 1px solid #9bc2e6;
+      }
+      .ag-blue .ag-header-cell-label {
+        padding: 4px 2px 4px 2px;
+        font-weight: bold;
+        color: #fff;
+      }
+      .ag-blue .ag-header-cell-text {
+        padding-left: 2px;
+      }
+      .ag-blue .ag-header-group-cell-label {
+        padding: 4px;
+        font-weight: bold;
+        color: #fff;
+        padding-left: 10px;
+      }
+      .ag-blue .ag-header-group-text {
+        margin-right: 2px;
+      }
+      .ag-blue .ag-header-cell-menu-button {
+        color: #fff;
+        border: 1px solid #a6acb3;
+        padding: 2px;
+        margin-top: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        line-height: 0px; /* normal line height, a space was appearing below the menu button */
+        /* When using bootstrap, box-sizing was set to 'border-box' */
+      }
+      .ag-blue .ag-header-icon {
+        color: #fff;
+        stroke: #fff;
+        fill: #fff;
+      }
+      .ag-blue .ag-dark .ag-header-expand-icon:hover {
+        cursor: pointer;
+      }
+      .ag-blue .ag-row-odd {
+        background-color: #ddebf7;
+      }
+      .ag-blue .ag-row-even {
+        background-color: #fff;
+      }
+      .ag-blue .ag-overlay-loading-wrapper {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+      .ag-blue .ag-overlay-loading-center {
+        background-color: #fff;
+        border: 1px solid #a9a9a9;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      .ag-blue .ag-body {
+        background-color: #fafafa;
+      }
+      .ag-blue .ag-row-selected {
+        background-color: #c7c7c7;
+      }
+      .ag-blue .ag-group-cell-entire-row {
+        background-color: #fff;
+        font-weight: bold;
+        padding: 2px 4px;
+        border-bottom: solid 1px #9bc2e6;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      .ag-blue .ag-footer-cell-entire-row {
+        background-color: #fff;
+        font-weight: bold;
+        padding: 4px;
+        border-bottom: solid 1px #9bc2e6;
+      }
+      .ag-blue .ag-group-cell {
+        font-style: italic;
+      }
+      .ag-blue .ag-group-expand {
+        padding-right: 2px;
+      }
+      .ag-blue .ag-footer-cell {
+        font-style: italic;
+      }
+      .ag-blue .ag-menu {
+        border: 1px solid #7070a0;
+        background-color: #f0f0f0;
+        cursor: default;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+      }
+      .ag-blue .ag-menu .ag-tab-header {
+        background-color: #5b9bd5;
+      }
+      .ag-blue .ag-menu .ag-tab {
+        padding: 6px 8px 6px 8px;
+        margin: 2px 2px 0px 2px;
+        display: inline-block;
+        border-right: 1px solid transparent;
+        border-left: 1px solid transparent;
+        border-top: 1px solid transparent;
+        border-top-right-radius: 2px;
+        border-top-left-radius: 2px;
+      }
+      .ag-blue .ag-menu .ag-tab-selected {
+        background-color: #9bc2e6;
+        border-right: 1px solid #7070a0;
+        border-left: 1px solid #7070a0;
+        border-top: 1px solid #7070a0;
+      }
+      .ag-blue .ag-menu-separator {
+        border-top: 1px solid #d3d3d3;
+      }
+      .ag-blue .ag-menu-option-active {
+        background-color: #bde2e5;
+      }
+      .ag-blue .ag-menu-option-icon {
+        padding: 2px 4px 2px 4px;
+        vertical-align: middle;
+      }
+      .ag-blue .ag-menu-option-text {
+        padding: 2px 4px 2px 4px;
+        vertical-align: middle;
+      }
+      .ag-blue .ag-menu-option-shortcut {
+        padding: 2px 2px 2px 20px;
+        vertical-align: middle;
+      }
+      .ag-blue .ag-menu-option-popup-pointer {
+        padding: 2px 4px 2px 4px;
+        vertical-align: middle;
+      }
+      .ag-blue .ag-menu-option-disabled {
+        opacity: 0.5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+        filter: alpha(opacity=50);
+      }
+      .ag-blue .ag-menu-column-select-wrapper {
+        margin: 2px;
+      }
+      .ag-blue .ag-filter-checkbox {
+        position: relative;
+        top: 2px;
+        left: 2px;
+        padding-right: 2px;
+      }
+      .ag-blue .ag-filter-header-container {
+        border-bottom: 1px solid #d3d3d3;
+        font: 10pt Calibri, "Segoe UI", Thonburi, Arial, Verdana, sans-serif;
+      }
+      .ag-blue .ag-filter-apply-panel {
+        border-top: 1px solid #d3d3d3;
+        padding: 2px;
+      }
+      .ag-blue .ag-filter-filter {
+        background-color: #fff;
+        border: 1px solid #c6c6c6;
+        width: 192px;
+      }
+      .ag-blue .ag-filter-value {
+        margin-left: 4px;
+      }
+      .ag-blue .ag-filter-value:hover {
+        background-color: #39f;
+        border: 1px dotted #000;
+        color: #fff;
+      }
+      .ag-blue .ag-selection-checkbox {
+        margin-left: 4px;
+      }
+      .ag-blue .ag-paging-panel {
+        padding: 4px;
+      }
+      .ag-blue .ag-paging-button {
+        margin-left: 4px;
+        margin-right: 4px;
+      }
+      .ag-blue .ag-paging-row-summary-panel {
+        display: inline-block;
+        width: 300px;
+      }
+      .ag-blue .ag-tool-panel {
+        background-color: #eee;
+        border-right: 1px solid #9bc2e6;
+        border-bottom: 1px solid #9bc2e6;
+        border-top: 1px solid #9bc2e6;
+      }
+      .ag-blue .ag-status-bar {
+        font-size: 12px;
+        height: 20px;
+        border-bottom: 1px solid #9bc2e6;
+        border-left: 1px solid #9bc2e6;
+        border-right: 1px solid #9bc2e6;
+        background-color: #ddebf7;
+        color: #fff;
+      }
+      .ag-blue .ag-status-bar-aggregations {
+        float: right;
+      }
+      .ag-blue .ag-status-bar-item {
+        padding-left: 10px;
+      }
+    </style>
+    <style type="text/css">
+      .ag-dark {
+        line-height: 1.4;
+      }
+      .ag-dark img {
+        vertical-align: middle;
+        border: 0px;
+      }
+      .ag-dark .ag-root {
+        border: 1px solid #808080;
+        color: #e0e0e0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      .ag-dark .ag-row-group-cell {
+        background: #430000;
+        border: 1px solid #808080;
+        padding: 2px;
+      }
+      .ag-dark .ag-row-group-cell-ghost {
+        opacity: 0.3;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+        filter: alpha(opacity=30);
+      }
+      .ag-dark .ag-row-group-cell-text {
+        padding-left: 2px;
+        padding-right: 2px;
+      }
+      .ag-dark .ag-row-group-cell-button {
+        border: 1px solid transparent;
+        padding-left: 2px;
+        padding-right: 2px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+      }
+      .ag-dark .ag-row-group-cell-button:hover {
+        border: 1px solid #808080;
+      }
+      .ag-dark .ag-row-group-empty-message {
+        padding-left: 2px;
+        padding-right: 2px;
+        border: 1px solid transparent;
+        color: #909090;
+      }
+      .ag-dark .ag-row-group-icon {
+        padding-right: 4px;
+      }
+      .ag-dark .ag-row-group-panel {
+        border-top: 1px solid #808080;
+        border-left: 1px solid #808080;
+        border-right: 1px solid #808080;
+        padding: 4px;
+        background-color: #403e3e;
+        color: #e0e0e0;
+      }
+      .ag-dark .ag-cell {
+        border-right: 1px solid #808080;
+        padding: 2px;
+      }
+      .ag-dark .ag-cell-range-selected-1:not(.ag-cell-focus) {
+        background-color: rgba(100, 160, 160, 0.4);
+      }
+      .ag-dark .ag-cell-range-selected-2:not(.ag-cell-focus) {
+        background-color: rgba(100, 190, 190, 0.4);
+      }
+      .ag-dark .ag-cell-range-selected-3:not(.ag-cell-focus) {
+        background-color: rgba(100, 220, 220, 0.4);
+      }
+      .ag-dark .ag-cell-range-selected-4:not(.ag-cell-focus) {
+        background-color: rgba(100, 250, 250, 0.4);
+      }
+      .ag-dark .ag-column-moving .ag-cell {
+        -webkit-transition: left 0.2s;
+        -moz-transition: left 0.2s;
+        -o-transition: left 0.2s;
+        -ms-transition: left 0.2s;
+        transition: left 0.2s;
+      }
+      .ag-dark .ag-cell-focus {
+        border: 1px solid #a9a9a9;
+      }
+      .ag-dark .ag-cell-no-focus {
+        border-right: 1px dotted #808080;
+        border-top: 1px solid transparent;
+        border-left: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+      }
+      .ag-dark .ag-cell-first-right-pinned {
+        border-left: 1px solid #808080;
+      }
+      .ag-dark .ag-cell-last-left-pinned {
+        border-right: 1px solid #808080;
+      }
+      .ag-dark .ag-cell-highlight {
+        border: 1px solid #90ee90;
+      }
+      .ag-dark .ag-cell-highlight-animation {
+        -webkit-transition: border 1s;
+        -moz-transition: border 1s;
+        -o-transition: border 1s;
+        -ms-transition: border 1s;
+        transition: border 1s;
+      }
+      .ag-dark .ag-header {
+        background-color: #430000;
+        border-bottom: 1px solid #808080;
+      }
+      .ag-dark .ag-no-scrolls .ag-header-container {
+        background-color: #430000;
+        border-bottom: 1px solid #808080;
+      }
+      .ag-dark .ag-header-cell {
+        border-right: 1px solid #808080;
+      }
+      .ag-dark .ag-header-cell-moving .ag-header-cell-label {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+      }
+      .ag-dark .ag-header-cell-moving-clone {
+        border-right: 1px solid #808080;
+        border-left: 1px solid #808080;
+        background-color: rgba(43, 0, 0, 0.8);
+      }
+      .ag-dark .ag-header-cell-moving {
+        background-color: #808080;
+      }
+      .ag-dark .ag-pinned-right-header {
+        border-left: 1px solid #808080;
+      }
+      .ag-dark .ag-header-cell-label {
+        padding: 4px 2px 4px 2px;
+      }
+      .ag-dark .ag-header-cell-text {
+        padding: 2px;
+      }
+      .ag-dark .ag-header-group-cell-label {
+        font-weight: bold;
+        padding: 4px;
+        padding-left: 10px;
+      }
+      .ag-dark .ag-header-group-cell {
+        border-right: 1px solid #808080;
+      }
+      .ag-dark .ag-header-group-text {
+        margin-right: 2px;
+      }
+      .ag-dark .ag-header-group-cell-with-group {
+        border-bottom: 1px solid #808080;
+      }
+      .ag-dark .ag-header-cell-menu-button {
+        padding: 2px;
+        margin-top: 4px;
+        border: 1px solid transparent;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box; /* When using bootstrap, box-sizing was set to 'border-box' */
+        line-height: 0px; /* normal line height, a space was appearing below the menu button */
+      }
+      .ag-dark .ag-header-cell-menu-button:hover {
+        border: 1px solid #e0e0e0;
+      }
+      .ag-dark .ag-header-icon {
+        stroke: #e0e0e0;
+        fill: #e0e0e0;
+      }
+      .ag-dark .ag-header-expand-icon:hover {
+        cursor: pointer;
+      }
+      .ag-dark .ag-row-odd {
+        background-color: #302e2e;
+      }
+      .ag-dark .ag-row-even {
+        background-color: #403e3e;
+      }
+      .ag-dark .ag-overlay-loading-wrapper {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+      .ag-dark .ag-overlay-loading-center {
+        background-color: #fff;
+        border: 1px solid #a9a9a9;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        padding: 10px;
+        color: #000;
+      }
+      .ag-dark .ag-body {
+        background-color: #ddd;
+      }
+      .ag-dark .ag-row-selected {
+        background-color: #000;
+      }
+      .ag-dark .ag-group-cell-entire-row {
+        background-color: #aaa;
+        color: 222;
+        padding: 4px;
+      }
+      .ag-dark .ag-footer-cell-entire-row {
+        background-color: #aaa;
+        color: 222;
+        padding: 4px;
+      }
+      .ag-dark .ag-group-cell {
+        font-style: italic;
+      }
+      .ag-dark .ag-group-expand {
+        padding-right: 2px;
+      }
+      .ag-dark .ag-footer-cell {
+        font-style: italic;
+      }
+      .ag-dark .ag-menu {
+        border: 1px solid #555;
+        background-color: #f0f0f0;
+        cursor: default;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+      }
+      .ag-dark .ag-menu .ag-tab-header {
+        background-color: #430000;
+      }
+      .ag-dark .ag-menu .ag-tab {
+        padding: 6px 8px 6px 8px;
+        margin: 2px 2px 0px 2px;
+        display: inline-block;
+        border-right: 1px solid transparent;
+        border-left: 1px solid transparent;
+        border-top: 1px solid transparent;
+        border-top-right-radius: 2px;
+        border-top-left-radius: 2px;
+      }
+      .ag-dark .ag-menu .ag-tab-selected {
+        background-color: #403e3e;
+        border-right: 1px solid #555;
+        border-left: 1px solid #555;
+        border-top: 1px solid #555;
+      }
+      .ag-dark .ag-menu-separator {
+        border-top: 1px solid #d3d3d3;
+      }
+      .ag-dark .ag-menu-option-active {
+        background-color: #bde2e5;
+      }
+      .ag-dark .ag-menu-option-icon {
+        padding: 2px 4px 2px 4px;
+        vertical-align: middle;
+      }
+      .ag-dark .ag-menu-option-text {
+        padding: 2px 4px 2px 4px;
+        vertical-align: middle;
+      }
+      .ag-dark .ag-menu-option-shortcut {
+        padding: 2px 2px 2px 20px;
+        vertical-align: middle;
+      }
+      .ag-dark .ag-menu-option-popup-pointer {
+        padding: 2px 4px 2px 4px;
+        vertical-align: middle;
+      }
+      .ag-dark .ag-menu-option-disabled {
+        opacity: 0.5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+        filter: alpha(opacity=50);
+      }
+      .ag-dark .ag-menu-column-select-wrapper {
+        margin: 2px;
+      }
+      .ag-dark .ag-filter-checkbox {
+        position: relative;
+        top: 2px;
+        left: 2px;
+      }
+      .ag-dark .ag-filter-header-container {
+        border-bottom: 1px solid #d3d3d3;
+      }
+      .ag-dark .ag-filter-header-container {
+        border-bottom: 1px solid #d3d3d3;
+      }
+      .ag-dark .ag-filter-apply-panel {
+        border-top: 1px solid #d3d3d3;
+        padding: 2px;
+      }
+      .ag-dark .ag-selection-checkbox {
+        margin-left: 4px;
+      }
+      .ag-dark .ag-paging-panel {
+        color: #000;
+        padding: 4px;
+      }
+      .ag-dark .ag-paging-button {
+        margin-left: 4px;
+        margin-right: 4px;
+      }
+      .ag-dark .ag-paging-row-summary-panel {
+        display: inline-block;
+        width: 300px;
+      }
+      .ag-dark .ag-tool-panel {
+        background-color: #eee;
+        border-right: 1px solid #808080;
+        border-bottom: 1px solid #808080;
+        border-top: 1px solid #808080;
+      }
+      .ag-dark .ag-status-bar {
+        font-size: 12px;
+        height: 20px;
+        border-bottom: 1px solid #808080;
+        border-left: 1px solid #808080;
+        border-right: 1px solid #808080;
+        padding: 2px;
+        background-color: #403e3e;
+        color: #e0e0e0;
+      }
+      .ag-dark .ag-status-bar-aggregations {
+        float: right;
+      }
+    </style>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-grid" src="/resources/js/lib/angular/angular-grid.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-zingchart" src="/resources/js/lib/angular/angular-zingchart.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/directive/select-box-directive" src="/resources/js/metatron/common/directive/select-box-directive.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/activities/alarm/alarm-status-controller" src="/resources/js/metatron/activities/alarm/alarm-status-controller.js?ver=201602221114"></script>
+    <style type="text/css"></style>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/directive/component-event-directive" src="/resources/js/metatron/common/directive/component-event-directive.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/directive/agGridPaging-directive" src="/resources/js/metatron/common/directive/agGridPaging-directive.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/activities/system/system-status-controller" src="/resources/js/metatron/activities/system/system-status-controller.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/activities/job/job-history-controller" src="/resources/js/metatron/activities/job/job-history-controller.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/activities/job/job-detail-popup-controller" src="/resources/js/metatron/activities/job/job-detail-popup-controller.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/directive/date-time-selector-directive" src="/resources/js/metatron/common/directive/date-time-selector-directive.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/directive/checkbox-directive" src="/resources/js/metatron/common/directive/checkbox-directive.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/directive/search-condition-directive" src="/resources/js/metatron/common/directive/search-condition-directive.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lib/jquery/jquery.powertip.min" src="/resources/js/lib/jquery/jquery.powertip.min.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/controller/popup/rawdata-grid-popup-controller" src="/resources/js/metatron/common/controller/popup/rawdata-grid-popup-controller.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/service/yarn/yarn-status-controller" src="/resources/js/metatron/service/yarn/yarn-status-controller.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/service/csv-service" src="/resources/js/metatron/common/service/csv-service.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/directive/ng-csv" src="/resources/js/metatron/common/directive/ng-csv.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/administrator/host-management-controller" src="/resources/js/metatron/administrator/host-management-controller.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/common/directive/image-checkbox-directive" src="/resources/js/metatron/common/directive/image-checkbox-directive.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/administrator/service-management-controller" src="/resources/js/metatron/administrator/service-management-controller.js?ver=201602221114"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="metatron/administrator/configuration-controller" src="/resources/js/metatron/administrator/configuration-controller.js?ver=201602221114"></script>
+  </head>
+  <body style="color: rgb(0, 0, 0)" cz-shortcut-listen="true">
+    <header ng-controller="LeftCtrl as leftCtrl" id="leftM" style="width: 200px; height: 958.889px">
+      <h1>
+        <span ng-click="leftCtrl.goToDefaultPath()" style="cursor: pointer">METATRON<em>MANAGER</em></span
+        ><button type="button" style="border: 0; outline: 0">MENU</button>
+      </h1>
+      <nav class="mu-gnb">
+        <!-- Depth1 -->
+        <ul class="mu-slide-menu" style="z-index: 990">
+          <li class="cluster">
+            <a style="pointer-events: none; cursor: default; background-color: #11a8ab"><i class="mu-icon mn-01"></i>Cluster</a>
+            <button type="button" class="mu-btn mu-btn-icon" ng-show="leftCtrl.masterFlag">
+              <i class="mu-icon refresh" id="refreshButton" ng-click="leftCtrl.refreshClusterList()"></i>
+            </button>
+            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: auto">
+              <ul id="cluster_inner" style="background-color: rgb(43, 51, 80); overflow: hidden; width: auto; height: 90px" slimscroll="{height:'90px', color:'#6e6e6e', size:'7px'}">
+                <!----><!---->
+                <!----><!---->
+                <li ng-click="leftCtrl.selectGroupId($event,obj.systemSeq, obj.systemParentSeq, obj.systemName)" ng-repeat="obj in leftCtrl.systemGroupList" ng-if="leftCtrl.systemGroupList != null &amp;&amp; leftCtrl.systemGroupList.length > 0">
+                  <a style="padding: 13px 0px 13px 20px; color: rgb(68, 206, 209)" href="" id="cluster_1">THADOOP</a>
+                  <div ng-show="$last" style="height: 20px"></div>
+                </li>
+                <!----><!---->
+              </ul>
+              <div class="slimScrollBar" style="background: rgb(110, 110, 110); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 91.0112px"></div>
+              <div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px"></div>
+            </div>
+          </li>
+          <!---->
+          <li id="li_m_1001" ng-repeat="m in leftCtrl.menu track by (m.menuId + m.menuName)" class="top-mn">
+            <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(m , $event)"><i class="mu-icon mn-02"></i>Dashboard</a>
+            <button ng-show="m.childrenFlag != null &amp;&amp; m.childrenFlag == 'Y'" type="button" class="mu-btn mu-btn-icon"><i class="mu-icon arr-down"></i></button>
+            <ul id="m_1001" class="sub-mn" style="z-index: 990; display: none">
+              <!----><!----><!----><!----><!----><!----><!----><!----><!---->
+
+              <!----><!---->
+              <li ng-if="child.childrenFlag == null || child.childrenFlag == 'N'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <!---->
+                <!----><a href="javascript:void(0);" ng-if="child.menuName.length < 21" ng-click="leftCtrl.selectMenu(child , $event)" id="m_2000" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Overview</a
+                ><!---->
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag == null || child.childrenFlag == 'N'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <!---->
+                <!----><a href="javascript:void(0);" ng-if="child.menuName.length < 21" ng-click="leftCtrl.selectMenu(child , $event)" id="m_2001" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Job</a
+                ><!---->
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag == null || child.childrenFlag == 'N'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <!---->
+                <!----><a href="javascript:void(0);" ng-if="child.menuName.length < 21" ng-click="leftCtrl.selectMenu(child , $event)" id="m_2003" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Metric</a
+                ><!---->
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag == null || child.childrenFlag == 'N'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <!---->
+                <!----><a href="javascript:void(0);" ng-if="child.menuName.length < 21" ng-click="leftCtrl.selectMenu(child , $event)" id="m_2004" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">HeatMap</a
+                ><!---->
+              </li>
+              <!----><!---->
+            </ul>
+          </li>
+          <!---->
+          <li id="li_m_1002" ng-repeat="m in leftCtrl.menu track by (m.menuId + m.menuName)" class="top-mn">
+            <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(m , $event)"><i class="mu-icon mn-03"></i>Services</a>
+            <button ng-show="m.childrenFlag != null &amp;&amp; m.childrenFlag == 'Y'" type="button" class="mu-btn mu-btn-icon"><i class="mu-icon arr-down"></i></button>
+            <ul id="m_1002" class="sub-mn" style="z-index: 990; display: none">
+              <!----><!---->
+              <li ng-if="child.childrenFlag != null &amp;&amp; child.childrenFlag == 'Y'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <a href="javascript:void(0);" id="m_2005" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">HDFS<i class="mu-icon fillarrow-r"></i></a>
+                <ul class="depth3" style="display: none">
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3001">Status</a>
+                  </li>
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3023">File Browser</a>
+                  </li>
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3036">RPC Monitoring</a>
+                  </li>
+                  <!---->
+                </ul>
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag != null &amp;&amp; child.childrenFlag == 'Y'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <a href="javascript:void(0);" id="m_2017" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Yarn<i class="mu-icon fillarrow-r"></i></a>
+                <ul class="depth3" style="display: none">
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3015">Status</a>
+                  </li>
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3016">Queue</a>
+                  </li>
+                  <!---->
+                </ul>
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag != null &amp;&amp; child.childrenFlag == 'Y'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <a href="javascript:void(0);" id="m_2022" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Trino<i class="mu-icon fillarrow-r"></i></a>
+                <ul class="depth3" style="display: none">
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3018">Status</a>
+                  </li>
+                  <!---->
+                </ul>
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag != null &amp;&amp; child.childrenFlag == 'Y'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <a href="javascript:void(0);" id="m_2031" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Analysis<i class="mu-icon fillarrow-r"></i></a>
+                <ul class="depth3" style="display: none">
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3017">History</a>
+                  </li>
+                  <!---->
+                </ul>
+              </li>
+              <!----><!---->
+
+              <!----><!----><!----><!----><!----><!----><!----><!----><!---->
+            </ul>
+          </li>
+          <!---->
+          <li id="li_m_1003" ng-repeat="m in leftCtrl.menu track by (m.menuId + m.menuName)" class="top-mn">
+            <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(m , $event)"><i class="mu-icon mn-04"></i>Activities</a>
+            <button ng-show="m.childrenFlag != null &amp;&amp; m.childrenFlag == 'Y'" type="button" class="mu-btn mu-btn-icon"><i class="mu-icon arr-down"></i></button>
+            <ul id="m_1003" class="sub-mn" style="z-index: 990; display: none">
+              <!----><!---->
+              <li ng-if="child.childrenFlag != null &amp;&amp; child.childrenFlag == 'Y'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <a href="javascript:void(0);" id="m_2008" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Job<i class="mu-icon fillarrow-r"></i></a>
+                <ul class="depth3" style="display: none">
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3008">History</a>
+                  </li>
+                  <!---->
+                </ul>
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag != null &amp;&amp; child.childrenFlag == 'Y'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <a href="javascript:void(0);" id="m_2010" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">System<i class="mu-icon fillarrow-r"></i></a>
+                <ul class="depth3" style="display: none">
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3011">Status</a>
+                  </li>
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3012">History</a>
+                  </li>
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3034">Memory History</a>
+                  </li>
+                  <!---->
+                </ul>
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag != null &amp;&amp; child.childrenFlag == 'Y'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <a href="javascript:void(0);" id="m_2034" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Alarm<i class="mu-icon fillarrow-r"></i></a>
+                <ul class="depth3" style="display: none">
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3013">Status</a>
+                  </li>
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3014">History</a>
+                  </li>
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3020">Configuration</a>
+                  </li>
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3030">SMS Configuration</a>
+                  </li>
+                  <!---->
+                </ul>
+              </li>
+              <!----><!---->
+
+              <!----><!----><!----><!----><!----><!----><!---->
+            </ul>
+          </li>
+          <!---->
+          <li id="li_m_1005" ng-repeat="m in leftCtrl.menu track by (m.menuId + m.menuName)" class="top-mn">
+            <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(m , $event)"><i class="mu-icon mn-06"></i>Data</a>
+            <button ng-show="m.childrenFlag != null &amp;&amp; m.childrenFlag == 'Y'" type="button" class="mu-btn mu-btn-icon"><i class="mu-icon arr-down"></i></button>
+            <ul id="m_1005" class="sub-mn" style="z-index: 990; display: none">
+              <!----><!---->
+              <li ng-if="child.childrenFlag != null &amp;&amp; child.childrenFlag == 'Y'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <a href="javascript:void(0);" id="m_2032" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Job<i class="mu-icon fillarrow-r"></i></a>
+                <ul class="depth3" style="display: none">
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3025">JobCount</a>
+                  </li>
+                  <!---->
+                </ul>
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag != null &amp;&amp; child.childrenFlag == 'Y'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <a href="javascript:void(0);" id="m_2033" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">HDFS<i class="mu-icon fillarrow-r"></i></a>
+                <ul class="depth3" style="display: none">
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3028">Service Summary</a>
+                  </li>
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3032">Overview</a>
+                  </li>
+                  <!---->
+                  <li ng-repeat="child2 in child.children track by (child2.menuId + child2.menuName)">
+                    <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(child2 , $event)" id="m_3033">Daily Summary</a>
+                  </li>
+                  <!---->
+                </ul>
+              </li>
+              <!----><!---->
+
+              <!----><!----><!----><!----><!---->
+            </ul>
+          </li>
+          <!---->
+          <li id="li_m_1007" ng-repeat="m in leftCtrl.menu track by (m.menuId + m.menuName)" class="top-mn">
+            <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(m , $event)"><i class="mu-icon mn-08"></i>Administrator</a>
+            <button ng-show="m.childrenFlag != null &amp;&amp; m.childrenFlag == 'Y'" type="button" class="mu-btn mu-btn-icon"><i class="mu-icon arr-down"></i></button>
+            <ul id="m_1007" class="sub-mn" style="z-index: 990; display: none">
+              <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+
+              <!----><!---->
+              <li ng-if="child.childrenFlag == null || child.childrenFlag == 'N'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <!---->
+                <!----><a href="javascript:void(0);" ng-if="child.menuName.length < 21" ng-click="leftCtrl.selectMenu(child , $event)" id="m_2014" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">User Management</a
+                ><!---->
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag == null || child.childrenFlag == 'N'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <!---->
+                <!----><a href="javascript:void(0);" ng-if="child.menuName.length < 21" ng-click="leftCtrl.selectMenu(child , $event)" id="m_2015" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Host Management</a
+                ><!---->
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag == null || child.childrenFlag == 'N'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <!---->
+                <!----><a href="javascript:void(0);" ng-if="child.menuName.length < 21" ng-click="leftCtrl.selectMenu(child , $event)" id="m_2025" style="color: rgb(68, 206, 209); background-color: rgb(55, 64, 93)" select="true">Configuration</a
+                ><!---->
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag == null || child.childrenFlag == 'N'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <!---->
+                <!----><a href="javascript:void(0);" ng-if="child.menuName.length < 21" ng-click="leftCtrl.selectMenu(child , $event)" id="m_2026" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Service Management</a
+                ><!---->
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag == null || child.childrenFlag == 'N'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <!----><a href="javascript:void(0);" ng-if="child.menuName.length > 21" style="font-size: 13px; color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)" ng-click="leftCtrl.selectMenu(child , $event)" id="m_2028">Application Management</a
+                ><!---->
+                <!---->
+              </li>
+              <!----><!----><!---->
+              <li ng-if="child.childrenFlag == null || child.childrenFlag == 'N'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <!---->
+                <!----><a href="javascript:void(0);" ng-if="child.menuName.length < 21" ng-click="leftCtrl.selectMenu(child , $event)" id="m_2036" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Report</a
+                ><!---->
+              </li>
+              <!----><!---->
+            </ul>
+          </li>
+          <!---->
+          <li id="li_m_1009" ng-repeat="m in leftCtrl.menu track by (m.menuId + m.menuName)" class="top-mn active">
+            <a href="javascript:void(0);" ng-click="leftCtrl.selectMenu(m , $event)"><i class="mu-icon mn-010"></i>Infra</a>
+            <button ng-show="m.childrenFlag != null &amp;&amp; m.childrenFlag == 'Y'" type="button" class="mu-btn mu-btn-icon"><i class="mu-icon arr-up"></i></button>
+            <ul id="m_1009" class="sub-mn" style="z-index: 990; display: block">
+              <!----><!----><!---->
+
+              <!----><!---->
+              <li ng-if="child.childrenFlag == null || child.childrenFlag == 'N'" ng-repeat="child in m.children track by (child.menuId + child.menuName)">
+                <!---->
+                <!----><a href="javascript:void(0);" ng-if="child.menuName.length < 21" ng-click="leftCtrl.selectMenu(child , $event)" id="m_4002" style="color: rgb(157, 162, 166); background-color: rgb(46, 54, 81)">Trino</a
+                ><!---->
+              </li>
+              <!----><!---->
+            </ul>
+          </li>
+          <!---->
+        </ul>
+      </nav>
+    </header>
+    <div class="mu-container" style="height: 100%">
+      <section width="100%">
+        <div class="mu-top-cont" ng-controller="HeaderCtrl as headerCtrl" id="headerM">
+          <ol class="mu-path fl">
+            <!---->
+            <li ng-repeat="header in headerCtrl.headerMenu track by $index"><a> Administrator</a></li>
+            <!---->
+            <li ng-repeat="header in headerCtrl.headerMenu track by $index"><a> Configuration</a></li>
+            <!---->
+          </ol>
+          <div class="admin-info fl" style="display: none">
+            <strong>Resource Manager</strong>
+            <span>SKF-RF-51</span>
+            <button type="button" class="mu-btn mu-btn-icon"><i class="mu-icon link"></i>RM Web UI</button>
+          </div>
+          <div class="mu-top-menu fr" style="margin-right: 20px">
+            <div class="user-info">
+              <span class="push-area" ng-click="headerCtrl.alarmPopClick()" style="cursor: pointer">
+                <i class="push-alarm mu-icon bell"></i>
+                <b class="mu-badge ng-hide" ng-show="headerCtrl.showAlarmCount == true">0</b>
+              </span>
+              <button class="btn-logout mu-btn mu-btn-icon" ng-click="headerCtrl.updateUserPop($event)"><i class="icon-user mu-icon user"></i> admin</button>
+
+              <i class="icon-clock mu-icon clock" style="margin-left: 0px"></i>
+              <b class="date-time" title="Last refreshed date">2024-04-10 14:47</b>
+
+              <button class="btn-logout mu-btn mu-btn-icon" ng-click="headerCtrl.logoutHandler()"><i class="mu-icon logout2"></i> Logout</button>
+
+              <!--
+    
+      <button class="btn-setting mu-btn mu-btn-icon mu-btn-bg-non" ng-click="headerCtrl.updateUserPop($event)" style="margin-left : -15px"><i class="mu-icon setting"></i></button>
+    
+     -->
+            </div>
+          </div>
+        </div>
+        <div>
+          <!-- container -->
+          <div id="container">
+            <!----><ui-view width="100%" height="100%" layout="vertical" id="bodyContent">
+              <light-content>
+                <div class="mu-content" ng-controller="ConfigurationCtrl as configurationCtrl">
+                  <div class="mu-row">
+                    <div class="mu-col mu-col-2 left-box">
+                      <!---->
+                      <div class="box-model" ng-repeat="category in configurationCtrl.categoryData  track by $index  ">
+                        <div class="border-coral" disable-all="category.disable_col" style="color: inherit">
+                          <dl>
+                            <dd style="font-size: 100%">
+                              <!----><button type="button" class="mu-btn" ng-click="configurationCtrl.getXmlData($event,child)" ng-repeat="child in category.children  track by $index" style="margin-right: 10px; margin-bottom: 3px">hdfs-site</button
+                              ><!----><button type="button" class="mu-btn" ng-click="configurationCtrl.getXmlData($event,child)" ng-repeat="child in category.children  track by $index" style="margin-right: 10px; margin-bottom: 3px">core-site</button
+                              ><!---->
+                            </dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <!---->
+                      <div class="box-model" ng-repeat="category in configurationCtrl.categoryData  track by $index  ">
+                        <div class="border-coral" disable-all="category.disable_col" style="color: inherit">
+                          <dl>
+                            <dd style="font-size: 100%">
+                              <!----><button type="button" class="mu-btn" ng-click="configurationCtrl.getXmlData($event,child)" ng-repeat="child in category.children  track by $index" style="margin-right: 10px; margin-bottom: 3px">yarn-site</button
+                              ><!----><button type="button" class="mu-btn" ng-click="configurationCtrl.getXmlData($event,child)" ng-repeat="child in category.children  track by $index" style="margin-right: 10px; margin-bottom: 3px">map-reduce</button
+                              ><!---->
+                            </dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <!---->
+                      <div class="box-model" ng-repeat="category in configurationCtrl.categoryData  track by $index  ">
+                        <div class="border-coral" disable-all="category.disable_col" style="color: inherit">
+                          <dl>
+                            <dd style="font-size: 100%">
+                              <!----><button type="button" class="mu-btn" ng-click="configurationCtrl.getXmlData($event,child)" ng-repeat="child in category.children  track by $index" style="margin-right: 10px; margin-bottom: 3px">hive-site</button
+                              ><!---->
+                            </dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <!---->
+                      <div class="box-model" ng-repeat="category in configurationCtrl.categoryData  track by $index  ">
+                        <div class="border-coral disable-all" disable-all="category.disable_col">
+                          <dl>
+                            <dd style="font-size: 100%">
+                              <!----><button type="button" class="mu-btn" ng-click="configurationCtrl.getXmlData($event,child)" ng-repeat="child in category.children  track by $index" style="margin-right: 10px; margin-bottom: 3px" disabled="">jvm.config</button
+                              ><!----><button type="button" class="mu-btn" ng-click="configurationCtrl.getXmlData($event,child)" ng-repeat="child in category.children  track by $index" style="margin-right: 10px; margin-bottom: 3px" disabled="">node.properties</button
+                              ><!---->
+                            </dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <!---->
+                      <div class="box-model" ng-repeat="category in configurationCtrl.categoryData  track by $index  ">
+                        <div class="border-coral disable-all" disable-all="category.disable_col">
+                          <dl>
+                            <dd style="font-size: 100%">
+                              <!----><button type="button" class="mu-btn" ng-click="configurationCtrl.getXmlData($event,child)" ng-repeat="child in category.children  track by $index" style="margin-right: 10px; margin-bottom: 3px" disabled="">zk-config</button
+                              ><!---->
+                            </dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <!---->
+                    </div>
+                    <div class="mu-col mu-col-10">
+                      <div class="section-box">
+                        <div class="mu-page-title">
+                          <div class="mu-item-group fl">
+                            <h3 class="mu-title" style="vertical-align: top">Configuration</h3>
+                            <button type="button" class="mu-btn mu-btn-icon mu-btn-color mu-btn-red bg-red ml10 fl" ng-click=" configurationCtrl.addRow() "><i class="mu-icon add"></i></button>
+                            <a style="margin-left: 20px; font-weight: bold">Find :</a>
+                            <input type="text" class="mu-input ng-pristine ng-untouched ng-valid ng-empty" ng-change="configurationCtrl.searchKeyEnter()" ng-model="configurationCtrl.findKey" style="width: 300px" />
+                          </div>
+                          <div class="fr">
+                            <button type="button" class="mu-btn mu-btn-icon mu-btn-color bg-red fr" ng-click=" configurationCtrl.rollBack() ">
+                              <i class="mu-icon check-circle"></i>
+                              RollBack
+                            </button>
+                            <button type="button" class="mu-btn mu-btn-icon mu-btn-color bg-green fr" ng-click="configurationCtrl.setListToXml()">
+                              <i class="mu-icon check-circle"></i>
+                              Save
+                            </button>
+                          </div>
+                        </div>
+                        <div class="cont-area resource" style="height: 727px; overflow-y: auto">
+                          <div ng-show="configurationCtrl.gridData == null || configurationCtrl.gridData.length < 1" style="width: 100%; height: 100%; text-align: center; vertical-align: middle; padding-top: 370px">No Data.</div>
+                          <table ng-show="configurationCtrl.gridData != null &amp;&amp; configurationCtrl.gridData.length > 0" class="mu-grid mu-grid-hover mu-grid-strip ng-hide" id="conf_table">
+                            <thead>
+                              <tr>
+                                <th scope="col" style="width: 25%; text-align: center">Name</th>
+                                <th scope="col" style="width: 30%; text-align: center">Value</th>
+                                <th scope="col" style="width: 40%; text-align: center">Description</th>
+                                <th scope="col" style="text-align: center" hidden="">type</th>
+                                <th scope="col" style="text-align: center">Delete</th>
+                              </tr>
+                            </thead>
+                            <tbody style="overflow: auto; height: 700px">
+                              <!---->
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="cont-area zoo" style="display: none">
+                          <div class="mu-scroll-v mu-scroll-h" style="height: 700px">
+                            <textarea id="textarea" ng-model="configurationCtrl.cfgData" style="width: 1450px; height: 680px" class="ng-pristine ng-untouched ng-valid ng-empty"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> </light-content
+            ></ui-view>
+          </div>
+          <!-- //container -->
+
+          <script>
+            var require = {
+              urlArgs: "ver=201602221114",
+            };
+          </script>
+          <script type="text/javascript" data-main="/resources/js/metatron/main" src="/resources/js/lib/require/require-2.1.22.min.js"></script>
+        </div>
+      </section>
+    </div>
+
+    <footer id="footerM">Copyright <i class="mu-icon copyright"></i> 2022 SK Telecom. All rights reserved.</footer>
+    <div id="indicator"></div>
+
+    <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+  </body>
+</html>

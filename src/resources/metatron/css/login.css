@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/* Layout
+html,body{width:100%;min-height:100%;height:100%;margin:0}
+body{min-width:1280px;min-height:768px;background-color:#e7e7e7}
+.loginWrap{height:100%;margin-bottom:-26px;background:url(../images/login/bg_background.png) left bottom no-repeat;text-align:center}
+.loginWrap > .mu-hgroup{width:100%;padding:40px 56px 0}
+.loginWrap h1.mu-title{font-family:Arial,sans-serif;font-size:30px;font-weight:bold;color:#7c7d7f}
+
+.loginWrap > .mu-boxWrap{*zoom:1;margin-top:-85px;border-spacing:0}
+.loginWrap > .mu-boxWrap .mu-boxCell{border:0;vertical-align:middle}
+.loginForm{display:inline-block;min-width:333px;padding:30px 55px}
+.loginForm .mu-title{margin-bottom:30px;font-family:verdana,sans-serif;font-size:55px;color:#7c7d7f}
+.loginForm .mu-title small{display:block;margin-top:-13px;font-size:16px;color:#9e9d9d}
+.loginForm .mu-title small b{font-weight:bold}
+.loginForm .mu-vgroup > *{display:block;width:100%}
+.mu-input{border-color:#fff}
+.loginForm .mu-vgroup > .mu-input-icon .mu-icon{color:#7c7d7f}
+.loginForm .btnSignIn{height:46px;line-height:46px;font-weight:bold;font-size:16px;font-family:'Nanum Gothic'}
+.loginForm .mu-checkbox label{height:23px;padding-left:26px;font-family:dotum;font-size:11px;line-height:23px;color:#6a6a6a}
+.loginForm .mu-checkbox label:before{top:0;font-size:23px}
+footer{height:26px;font-size:10px;font-family:verdana;line-height:26px;color:#777;text-align:center}
+footer .copyright{font-size:10px}
+ */
+
+/* Layout */
+html, body{width:100%;min-height:100%;height:100%;margin:0}
+body{min-width:1600px;min-height:768px; color:#9da2a6;}
+body:after{display:block;content:'';clear:both}
+body,h1,h2,h3,h4,h5,h6,input,button,textarea,select{line-height:1.5;font:Tjs2akst12px '맑은 고딕',Malgun Gothic,Arial,AppleGothic,sans-serif}
+section{width:100%;height:calc(100% - 135px)}
+
+.login-body {min-width:1600px; width:100%; height:100%; background:url(../images/bg/bg_login_body_dark.jpg) no-repeat 0 0; background-size:cover;}
+.login-wrap {position:relative;}
+.login-box {position:absolute; left:50%; top:207px; width:683px; height:459px; margin-left:-320px;  background:url(../images/bg/bg_login_box.png) no-repeat 0 0;}
+.login-box .login-head {padding:50px 60px 30px;}
+.login-box .login-head .mu-title {width:365px; height:77px; background:url(../images/comm/img_login_logo.png) no-repeat 0 0; text-indent:-999em;}
+.login-box .login-head .info-txt {margin-top:30px; font-size:18px; color:#fff;}
+.login-box .login-cont {padding:30px 60px 25px; background-color:#212121;}
+.login-box .login-cont fieldset legend {position:absolute; z-index:-1; visibility:hidden;}
+.login-box .login-cont fieldset .mu-input {width:269px; height:33px; margin-bottom:15px; padding:10px 15px; border:0; background-color:#fff; font-weight:bold; line-height:14px; color:#333;}
+.login-box .login-cont fieldset .mu-checkbox + label {background-color:transparent;}
+.login-box .login-cont fieldset .mu-checkbox + label:before {color:#dedbd6;}
+.login-box .login-cont fieldset .label-txt {margin:0 10px; font-weight:bold; color:#ccc;}
+.login-box .login-cont fieldset .label-info {font-weight:bold; color:#ea9804;}
+.login-box .login-cont fieldset .mu-btn {display:block; width:100%; height:41px; margin-top:30px; font-size:18px; font-weight:bold; text-transform:uppercase;}
+.login-box .login-cont fieldset + a {display:block; margin-top:15px; color:#eee; text-decoration:underline;}
+footer {position:fixed; left:0; bottom:0; width:100%; height:135px; padding:40px 0; background-color:#111; text-align:left; text-align:center;}
+footer h2 {display:inline-block;  width:127px; height:49px; background:url(../images/comm/img_sk_logo.png) no-repeat 0 0; text-indent:-999em; vertical-align:middle;}
+footer .policy {display:inline-block; margin-left:40px; text-align:left; vertical-align:middle;}
+footer .policy ul li {display:inline-block; margin-left:10px; padding-left:11px; background:url(../images/comm/bul_bar.png) no-repeat 0 50%;}
+footer .policy ul li a {color:#eee;}
+footer .policy ul li:first-child {margin-left:0; padding:0; background:none;}
+footer .policy address {margin:15px 0 5px; color:#9da2a6;}

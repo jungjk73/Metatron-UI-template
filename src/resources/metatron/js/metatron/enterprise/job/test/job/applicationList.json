@@ -1,0 +1,43 @@
+{
+	"status": 200,
+	"request_time": "Thu Oct 27 14:46:55 KST 2016",
+	"response_time": "Thu Oct 27 14:47:14 KST 2016",
+	"elapsed_time": 18566,
+	"body": {
+		"ResourceManager": {
+			"apps": {
+				"app": [
+					{
+						"id": "application_1477481649272_0001",
+						"user": "hadoop",
+						"name": "test",
+						"queue": "root.appTEST02",
+						"state": "FAILED",
+						"finalStatus": "FAILED",
+						"progress": 100,
+						"trackingUI": "History",
+						"trackingUrl": "http:\/\/kafka01:8088\/cluster\/app\/application_1477481649272_0001",
+						"diagnostics": "Application application_1477481649272_0001 failed",
+						"clusterId": 1477481649272,
+						"applicationType": "YARN",
+						"applicationTags": "",
+						"startedTime": 1477542367432,
+						"finishedTime": 1477542380993,
+						"elapsedTime": 13561,
+						"amContainerLogs": "http:\/\/kafka02:8042\/node\/containerlogs\/container_1477481649272_0001_02_000001\/hadoop",
+						"amHostHttpAddress": "kafka02:8042",
+						"allocatedMB": -1,
+						"allocatedVCores": -1,
+						"runningContainers": -1,
+						"memorySeconds": 29002,
+						"vcoreSeconds": 17,
+						"preemptedResourceMB": 0,
+						"preemptedResourceVCores": 0,
+						"numNonAMContainerPreempted": 0,
+						"numAMContainerPreempted": 0
+					}
+				]
+			}
+		}
+	}
+}
